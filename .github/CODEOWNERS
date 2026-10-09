@@ -1,0 +1,6 @@
+# Copilot customization artifacts change every contributor's assistant, so they need an owner's review.
+/.github/agents/                   @Anthony-Huggins-Skillstorm
+/.github/prompts/                  @Anthony-Huggins-Skillstorm
+/.github/instructions/             @Anthony-Huggins-Skillstorm
+/.github/skills/                   @Anthony-Huggins-Skillstorm
+/.github/copilot-instructions.md   @Anthony-Huggins-Skillstorm
