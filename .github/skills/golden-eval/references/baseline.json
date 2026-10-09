@@ -1,0 +1,22 @@
+{
+ "recall_found": 54,
+ "recall_total": 64,
+ "superseded_above_current": 2,
+ "in_scope_min_top_score": 0.4219,
+ "out_of_scope_max_top_score": 0.4321,
+ "score_gap": -0.0102,
+ "grounded": 45,
+ "answers": 55,
+ "not_grounded_ids": [
+  "GQ-008",
+  "GQ-011",
+  "GQ-012",
+  "GQ-013",
+  "GQ-021",
+  "GQ-023",
+  "GQ-026",
+  "GQ-031",
+  "GQ-045",
+  "GQ-048"
+ ]
+}
