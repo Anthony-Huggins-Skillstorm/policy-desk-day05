@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from pathlib import Path
+
 import pytest
 
 from policy_desk.citations import extract_citations, verify_citations
@@ -26,6 +28,23 @@ class TestExtractCitations:
     )
     def test_extracts_well_formed_citations(self, answer, expected):
         assert extract_citations(answer) == expected
+
+    def test_extracts_every_corpus_doc_id(self):
+        manifest_path = Path(__file__).resolve().parents[1] / "corpus" / "MANIFEST.md"
+        doc_ids = []
+        for line in manifest_path.read_text(encoding="utf-8").splitlines():
+            if not line.startswith("| "):
+                continue
+            parts = [part.strip() for part in line.split("|")]
+            if len(parts) < 3:
+                continue
+            doc_id = parts[1]
+            if doc_id in {"Doc ID", "---"} or not doc_id:
+                continue
+            doc_ids.append(doc_id)
+
+        answer = " ".join(f"[doc_id: {doc_id}]" for doc_id in doc_ids)
+        assert extract_citations(answer) == doc_ids
 
 
 class TestVerifyCitations:
