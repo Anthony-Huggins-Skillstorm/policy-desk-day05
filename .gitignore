@@ -1,0 +1,9 @@
+.venv/
+.env
+__pycache__/
+*.egg-info/
+.pytest_cache/
+logs/
+.copilot-tracking/
+# Shared VS Code settings that point Copilot at the HVE Core clone.
+!.vscode/

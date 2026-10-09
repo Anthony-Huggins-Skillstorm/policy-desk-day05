@@ -1,0 +1,1554 @@
+[
+ {
+  "chunk_id": "AIV-STD#00",
+  "doc_id": "AIV-STD",
+  "title": "AI Vendor Assessment Addendum",
+  "status": "Current",
+  "section": "1. Purpose and Applicability",
+  "text": "AI Vendor Assessment Addendum (AIV-STD, Current)\nSection: 1. Purpose and Applicability\n\n## 1. Purpose and Applicability\n\nThis addendum supplements DUE-STD for vendors that supply artificial intelligence or machine-learning services to Northwind. It applies when a vendor's service generates content, makes or recommends decisions, classifies or scores data, or uses a model trained or fine-tuned by the vendor or a fourth party. It applies equally to an AI feature added to an existing product; the Vendor Manager must notify the TPRM Office within 10 business days of learning that an existing vendor has enabled such a feature."
+ },
+ {
+  "chunk_id": "AIV-STD#01",
+  "doc_id": "AIV-STD",
+  "title": "AI Vendor Assessment Addendum",
+  "status": "Current",
+  "section": "2. Minimum Tier",
+  "text": "AI Vendor Assessment Addendum (AIV-STD, Current)\nSection: 2. Minimum Tier\n\n## 2. Minimum Tier\n\nAn AI vendor that processes Northwind Confidential data or personal data is Tier 2 at minimum. An AI vendor whose output is used in a decision about a client, such as credit, onboarding, fraud, or suitability, is Tier 1, regardless of spend."
+ },
+ {
+  "chunk_id": "AIV-STD#02",
+  "doc_id": "AIV-STD",
+  "title": "AI Vendor Assessment Addendum",
+  "status": "Current",
+  "section": "3. Model Transparency",
+  "text": "AI Vendor Assessment Addendum (AIV-STD, Current)\nSection: 3. Model Transparency\n\n## 3. Model Transparency\n\nThe vendor must disclose:\n\n- the underlying model or models, the model provider (a fourth party under FRTH-POL where different from the vendor), and the version in use;\n- the intended use and known limitations, normally as a model card or equivalent documentation;\n- the categories of data used to train the model, at a level sufficient to assess bias and intellectual-property risk;\n- where prompts, inputs, and outputs are processed and stored, and for how long.\n\nThe vendor must give at least 30 days' notice before a material model change, including a change of model provider, a major version upgrade, or a change in training data that affects Northwind's use case."
+ },
+ {
+  "chunk_id": "AIV-STD#03",
+  "doc_id": "AIV-STD",
+  "title": "AI Vendor Assessment Addendum",
+  "status": "Current",
+  "section": "4. Use of Northwind Data for Training",
+  "text": "AI Vendor Assessment Addendum (AIV-STD, Current)\nSection: 4. Use of Northwind Data for Training\n\n## 4. Use of Northwind Data for Training\n\nUsing Northwind data, including prompts, inputs, outputs, and feedback, to train, fine-tune, or otherwise improve the vendor's models or any third party's models is prohibited without prior written consent from the Northwind Data Owner and Legal. The prohibition must be written into the contract and the DPA (DPA-REQ clause 10). Consent, where given, must name the data set and purpose and may be withdrawn on 30 days' notice."
+ },
+ {
+  "chunk_id": "AIV-STD#04",
+  "doc_id": "AIV-STD",
+  "title": "AI Vendor Assessment Addendum",
+  "status": "Current",
+  "section": "5. Human Oversight",
+  "text": "AI Vendor Assessment Addendum (AIV-STD, Current)\nSection: 5. Human Oversight\n\n## 5. Human Oversight\n\nWhere AI output contributes to a decision affecting a client or an employee, the Business Owner must document the human review step, who performs it, and how reviewers can override the output. Fully automated decisions affecting clients require approval from the Chief Data and AI Officer and Legal."
+ },
+ {
+  "chunk_id": "AIV-STD#05",
+  "doc_id": "AIV-STD",
+  "title": "AI Vendor Assessment Addendum",
+  "status": "Current",
+  "section": "6. Evaluation Evidence",
+  "text": "AI Vendor Assessment Addendum (AIV-STD, Current)\nSection: 6. Evaluation Evidence\n\n## 6. Evaluation Evidence\n\nTier 1 and Tier 2 AI vendors provide evaluation evidence at onboarding and at least annually thereafter. Evidence must cover accuracy or quality metrics for Northwind's use case, bias and fairness testing across relevant groups, robustness testing including prompt-injection resistance for generative systems, and the results of red-team exercises. The Chief Data and AI Officer's team reviews this evidence alongside the CISO office's security review."
+ },
+ {
+  "chunk_id": "AIV-STD#06",
+  "doc_id": "AIV-STD",
+  "title": "AI Vendor Assessment Addendum",
+  "status": "Current",
+  "section": "7. Harmful Output Incidents",
+  "text": "AI Vendor Assessment Addendum (AIV-STD, Current)\nSection: 7. Harmful Output Incidents\n\n## 7. Harmful Output Incidents\n\nThe vendor must notify Northwind within 72 hours of becoming aware of harmful or materially incorrect output affecting Northwind, as set out in INCN-SLA. Harmful output includes discriminatory output, disclosure of another customer's data, fabricated facts presented as fact in a regulated communication, and output generated through a successful prompt-injection attack. Northwind employees who observe harmful output report it to the TPRM Office the same business day."
+ },
+ {
+  "chunk_id": "AIV-STD#07",
+  "doc_id": "AIV-STD",
+  "title": "AI Vendor Assessment Addendum",
+  "status": "Current",
+  "section": "8. Logging",
+  "text": "AI Vendor Assessment Addendum (AIV-STD, Current)\nSection: 8. Logging\n\n## 8. Logging\n\nVendors must make interaction logs for Northwind's use available to Northwind on request. Northwind's own retention of AI assistant interaction logs follows RET-SCH \u00a73."
+ },
+ {
+  "chunk_id": "AIV-STD#08",
+  "doc_id": "AIV-STD",
+  "title": "AI Vendor Assessment Addendum",
+  "status": "Current",
+  "section": "9. Exit",
+  "text": "AI Vendor Assessment Addendum (AIV-STD, Current)\nSection: 9. Exit\n\n## 9. Exit\n\nThe exit plan must address retrieval of any Northwind-specific fine-tuned models, embeddings, or prompt libraries, and certified deletion of Northwind data from training pipelines (EXIT-PLN \u00a74.2)."
+ },
+ {
+  "chunk_id": "CLD-STD#00",
+  "doc_id": "CLD-STD",
+  "title": "Cloud Service Provider Assessment Standard",
+  "status": "Current",
+  "section": "1. Purpose",
+  "text": "Cloud Service Provider Assessment Standard (CLD-STD, Current)\nSection: 1. Purpose\n\n## 1. Purpose\n\nCloud service providers (CSPs) change the shape of third-party risk. Northwind shares responsibility for security with the provider, data may move across regions, and many vendors depend on the same few platforms. This standard adds cloud-specific requirements on top of DUE-STD. It applies to infrastructure, platform, and software-as-a-service providers that store or process Northwind data."
+ },
+ {
+  "chunk_id": "CLD-STD#01",
+  "doc_id": "CLD-STD",
+  "title": "Cloud Service Provider Assessment Standard",
+  "status": "Current",
+  "section": "2. Tiering",
+  "text": "Cloud Service Provider Assessment Standard (CLD-STD, Current)\nSection: 2. Tiering\n\n## 2. Tiering\n\nA CSP that hosts Restricted data or supports a critical business service is Tier 1 under TIER-MTX regardless of spend. A SaaS provider hosted on a CSP is assessed as a vendor in its own right; its CSP is a fourth party (FRTH-POL)."
+ },
+ {
+  "chunk_id": "CLD-STD#02",
+  "doc_id": "CLD-STD",
+  "title": "Cloud Service Provider Assessment Standard",
+  "status": "Current",
+  "section": "3. Assurance",
+  "text": "Cloud Service Provider Assessment Standard (CLD-STD, Current)\nSection: 3. Assurance\n\n## 3. Assurance\n\n3.1 Tier 1 and Tier 2 CSPs provide a SOC 2 Type II report meeting DUE-STD \u00a74.2. CSA STAR Level 2 certification is accepted as an alternative for Tier 2 CSPs with CISO office approval.\n\n3.2 The CSP must publish, or provide under NDA, a shared responsibility matrix. The CISO office maps every control in the matrix marked as a customer responsibility to a Northwind control owner before go-live."
+ },
+ {
+  "chunk_id": "CLD-STD#03",
+  "doc_id": "CLD-STD",
+  "title": "Cloud Service Provider Assessment Standard",
+  "status": "Current",
+  "section": "4. Data Location",
+  "text": "Cloud Service Provider Assessment Standard (CLD-STD, Current)\nSection: 4. Data Location\n\n## 4. Data Location\n\n4.1 Northwind data may be stored only in the approved regions: United States, European Union, and United Kingdom.\n\n4.2 Storing data, or replicating backups, in any other region requires approval from the CISO office and Legal, and a DPA amendment where personal data is involved (DPA-REQ \u00a73).\n\n4.3 The CSP contract must require at least 90 days' notice of any change to the regions in which Northwind data is stored."
+ },
+ {
+  "chunk_id": "CLD-STD#04",
+  "doc_id": "CLD-STD",
+  "title": "Cloud Service Provider Assessment Standard",
+  "status": "Current",
+  "section": "5. Encryption and Keys",
+  "text": "Cloud Service Provider Assessment Standard (CLD-STD, Current)\nSection: 5. Encryption and Keys\n\n## 5. Encryption and Keys\n\n5.1 All Northwind data must be encrypted in transit with TLS 1.2 or higher and at rest with AES-256 or equivalent.\n\n5.2 Restricted data must be encrypted with customer-managed keys held in a Northwind-controlled key management service or hardware security module. The CSP must not have the ability to access customer-managed keys in plaintext.\n\n5.3 Customer-managed keys are rotated at least every 12 months."
+ },
+ {
+  "chunk_id": "CLD-STD#05",
+  "doc_id": "CLD-STD",
+  "title": "Cloud Service Provider Assessment Standard",
+  "status": "Current",
+  "section": "6. Identity and Logging",
+  "text": "Cloud Service Provider Assessment Standard (CLD-STD, Current)\nSection: 6. Identity and Logging\n\n## 6. Identity and Logging\n\nAdministrative access to Northwind tenants uses Northwind's identity provider with MFA (ACC-STD). The CSP must make audit logs for Northwind tenants available for export to Northwind's security monitoring platform, with at least 12 months of log history retrievable."
+ },
+ {
+  "chunk_id": "CLD-STD#06",
+  "doc_id": "CLD-STD",
+  "title": "Cloud Service Provider Assessment Standard",
+  "status": "Current",
+  "section": "7. Resilience and Portability",
+  "text": "Cloud Service Provider Assessment Standard (CLD-STD, Current)\nSection: 7. Resilience and Portability\n\n## 7. Resilience and Portability\n\n7.1 Tier 1 workloads must be deployed across at least two availability zones, and the design must meet the RTO and RPO for the vendor's tier in BCP-REQ.\n\n7.2 The exit plan (EXIT-PLN) must show that data can be exported in a non-proprietary format and describe how workloads would be rebuilt on an alternative platform."
+ },
+ {
+  "chunk_id": "CLD-STD#07",
+  "doc_id": "CLD-STD",
+  "title": "Cloud Service Provider Assessment Standard",
+  "status": "Current",
+  "section": "8. Concentration",
+  "text": "Cloud Service Provider Assessment Standard (CLD-STD, Current)\nSection: 8. Concentration\n\n## 8. Concentration\n\nEvery new Tier 1 CSP engagement and every new workload on an existing CSP that supports a critical business service is checked against CONC-STD thresholds, in particular threshold 4 (a single fourth party supporting more than 5 Tier 1 vendors)."
+ },
+ {
+  "chunk_id": "CLD-STD#08",
+  "doc_id": "CLD-STD",
+  "title": "Cloud Service Provider Assessment Standard",
+  "status": "Current",
+  "section": "9. Reassessment",
+  "text": "Cloud Service Provider Assessment Standard (CLD-STD, Current)\nSection: 9. Reassessment\n\n## 9. Reassessment\n\nCSPs are reassessed on their tier's frequency under TIER-MTX \u00a73. The CISO office also reviews the CSP's published security bulletins monthly and records any that affect Northwind services."
+ },
+ {
+  "chunk_id": "CONC-STD#00",
+  "doc_id": "CONC-STD",
+  "title": "Concentration Risk Standard",
+  "status": "Current",
+  "section": "1. Purpose",
+  "text": "Concentration Risk Standard (CONC-STD, Current)\nSection: 1. Purpose\n\n## 1. Purpose\n\nIndividually sound vendor relationships can add up to an unsound portfolio. When too many services depend on one vendor, one region, or one underlying technology, a single failure can disrupt several critical business services at once. This standard sets the thresholds Northwind monitors and what happens when one is crossed."
+ },
+ {
+  "chunk_id": "CONC-STD#01",
+  "doc_id": "CONC-STD",
+  "title": "Concentration Risk Standard",
+  "status": "Current",
+  "section": "2. Types of Concentration",
+  "text": "Concentration Risk Standard (CONC-STD, Current)\nSection: 2. Types of Concentration\n\n## 2. Types of Concentration\n\n- **Vendor concentration** \u2014 dependence on a single vendor, including its affiliates, across many contracts.\n- **Service concentration** \u2014 multiple critical business services relying on the same vendor.\n- **Geographic concentration** \u2014 Tier 1 vendors delivering from the same country or metropolitan area, exposed to the same natural disaster, political, or infrastructure event.\n- **Fourth-party concentration** \u2014 many vendors depending on the same subcontractor, most commonly the same cloud service provider (FRTH-POL, CLD-STD).\n- **Substitutability** \u2014 services for which no alternative provider could be onboarded within 12 months."
+ },
+ {
+  "chunk_id": "CONC-STD#02",
+  "doc_id": "CONC-STD",
+  "title": "Concentration Risk Standard",
+  "status": "Current",
+  "section": "3. Thresholds",
+  "text": "Concentration Risk Standard (CONC-STD, Current)\nSection: 3. Thresholds\n\n## 3. Thresholds\n\nThe TPRM Office flags a concentration when any of these are met:\n\n1. A single vendor group accounts for more than 15% of Northwind's total annual third-party spend.\n2. A single vendor supports more than 3 critical business services.\n3. More than 40% of Tier 1 vendors deliver primarily from the same country, excluding the United States.\n4. A single fourth party supports more than 5 Tier 1 vendors.\n5. A Tier 1 service is rated non-substitutable and has no tested exit plan under EXIT-PLN."
+ },
+ {
+  "chunk_id": "CONC-STD#03",
+  "doc_id": "CONC-STD",
+  "title": "Concentration Risk Standard",
+  "status": "Current",
+  "section": "4. Assessment Points",
+  "text": "Concentration Risk Standard (CONC-STD, Current)\nSection: 4. Assessment Points\n\n## 4. Assessment Points\n\nConcentration is assessed:\n\n- at onboarding of any Tier 1 vendor;\n- at renewal of any Tier 1 vendor (RNW-PRC Section 3);\n- when a Tier 1 vendor notifies a new material subcontractor;\n- quarterly across the full portfolio."
+ },
+ {
+  "chunk_id": "CONC-STD#04",
+  "doc_id": "CONC-STD",
+  "title": "Concentration Risk Standard",
+  "status": "Current",
+  "section": "5. Response to a Flag",
+  "text": "Concentration Risk Standard (CONC-STD, Current)\nSection: 5. Response to a Flag\n\n## 5. Response to a Flag\n\nA flag does not prohibit the engagement. It requires a decision. The Business Owner and the TPRM Office prepare a concentration memo stating the business rationale, the mitigations, and the residual risk. Mitigations may include a secondary provider, multi-region deployment, strengthened exit planning, or contractual step-in rights. The memo is approved by the TPRC. A threshold 2 or threshold 5 flag also requires Chief Risk Officer approval."
+ },
+ {
+  "chunk_id": "CONC-STD#05",
+  "doc_id": "CONC-STD",
+  "title": "Concentration Risk Standard",
+  "status": "Current",
+  "section": "6. Reporting",
+  "text": "Concentration Risk Standard (CONC-STD, Current)\nSection: 6. Reporting\n\n## 6. Reporting\n\nThe TPRM Office produces a quarterly concentration report for the TPRC covering all five thresholds, trends against the prior four quarters, and the status of approved mitigations. The report also lists the top 10 vendors by spend and the top 10 fourth parties by number of dependent Tier 1 vendors."
+ },
+ {
+  "chunk_id": "CONC-STD#06",
+  "doc_id": "CONC-STD",
+  "title": "Concentration Risk Standard",
+  "status": "Current",
+  "section": "7. Data Sources",
+  "text": "Concentration Risk Standard (CONC-STD, Current)\nSection: 7. Data Sources\n\n## 7. Data Sources\n\nThe report draws on the vendor inventory, the Business Impact Register, Accounts Payable spend data, and the fourth-party inventory maintained under FRTH-POL. Vendor Managers must keep the critical-service mapping in ProcureNet current; an inaccurate mapping is the most common cause of a missed concentration flag."
+ },
+ {
+  "chunk_id": "RNW-PRC#00",
+  "doc_id": "RNW-PRC",
+  "title": "Contract Renewal Procedure",
+  "status": "Current",
+  "section": "Section 1 \u2014 Purpose",
+  "text": "Contract Renewal Procedure (RNW-PRC, Current)\nSection: Section 1 \u2014 Purpose\n\n## Section 1 \u2014 Purpose\n\nA renewal is a fresh decision to continue a relationship, not an administrative formality. This procedure ensures the decision is taken with current risk and performance information and with enough time to exit or re-source if the answer is no."
+ },
+ {
+  "chunk_id": "RNW-PRC#01",
+  "doc_id": "RNW-PRC",
+  "title": "Contract Renewal Procedure",
+  "status": "Current",
+  "section": "Section 2 \u2014 Renewal Notice Windows",
+  "text": "Contract Renewal Procedure (RNW-PRC, Current)\nSection: Section 2 \u2014 Renewal Notice Windows\n\n## Section 2 \u2014 Renewal Notice Windows\n\nThe Vendor Manager must open a renewal case in ProcureNet no later than the following number of days before the contract expiry date:\n\n| Tier | Renewal case opened |\n|---|---|\n| Tier 1 | 120 days before expiry |\n| Tier 2 | 90 days before expiry |\n| Tier 3 | 60 days before expiry |\n| Tier 4 | 30 days before expiry |\n\nProcureNet sends reminders 30 days before each window opens. A renewal case opened late must be reported to the Head of Procurement, and a Tier 1 or Tier 2 case opened late is also reported to the TPRC."
+ },
+ {
+  "chunk_id": "RNW-PRC#02",
+  "doc_id": "RNW-PRC",
+  "title": "Contract Renewal Procedure",
+  "status": "Current",
+  "section": "Section 3 \u2014 Renewal Risk Review",
+  "text": "Contract Renewal Procedure (RNW-PRC, Current)\nSection: Section 3 \u2014 Renewal Risk Review\n\n## Section 3 \u2014 Renewal Risk Review\n\nBefore any renewal is approved, the Vendor Manager completes a renewal risk review covering:\n\n1. Reassessment status. If the vendor's next reassessment under DUE-STD \u00a75 falls due within 6 months of the renewal date, the reassessment is performed now as part of the renewal. An overdue reassessment blocks renewal.\n2. Performance. The last four performance scorecards under PERF-STD, including any open performance improvement plan.\n3. Open findings and exceptions. All open DUE-STD findings and EXC-PRC exceptions, with their expiry dates.\n4. Incidents. Any incident notified under INCN-SLA during the term, and whether notification deadlines were met.\n5. Scope change. Any change to data accessed, services supported, or spend that would change the tier under TIER-MTX.\n6. Subcontractors. Any change to material subcontractors under FRTH-POL.\n7. Concentration. For Tier 1 vendors, the TPRM Office confirms the renewal does not breach a threshold in CONC-STD."
+ },
+ {
+  "chunk_id": "RNW-PRC#03",
+  "doc_id": "RNW-PRC",
+  "title": "Contract Renewal Procedure",
+  "status": "Current",
+  "section": "Section 4 \u2014 Re-Sourcing",
+  "text": "Contract Renewal Procedure (RNW-PRC, Current)\nSection: Section 4 \u2014 Re-Sourcing\n\n## Section 4 \u2014 Re-Sourcing\n\nA renewal that increases total contract value above $250,000, where the original award was below that amount, must be competitively re-sourced under PRC-POL unless a sole-source justification is approved."
+ },
+ {
+  "chunk_id": "RNW-PRC#04",
+  "doc_id": "RNW-PRC",
+  "title": "Contract Renewal Procedure",
+  "status": "Current",
+  "section": "Section 5 \u2014 Auto-Renewal",
+  "text": "Contract Renewal Procedure (RNW-PRC, Current)\nSection: Section 5 \u2014 Auto-Renewal\n\n## Section 5 \u2014 Auto-Renewal\n\n5.1 Automatic renewal clauses are prohibited in Tier 1 and Tier 2 contracts. Every Tier 1 and Tier 2 renewal requires an affirmative decision recorded in ProcureNet.\n\n5.2 Tier 3 and Tier 4 contracts may auto-renew only if the contract (a) limits each renewal term to 12 months or less and (b) allows Northwind to terminate for convenience on 30 days' written notice.\n\n5.3 Where an inherited contract contains a non-compliant auto-renewal clause, Legal must issue a non-renewal notice before the clause's notice deadline and the contract must be renegotiated."
+ },
+ {
+  "chunk_id": "RNW-PRC#05",
+  "doc_id": "RNW-PRC",
+  "title": "Contract Renewal Procedure",
+  "status": "Current",
+  "section": "Section 6 \u2014 Decision and Records",
+  "text": "Contract Renewal Procedure (RNW-PRC, Current)\nSection: Section 6 \u2014 Decision and Records\n\n## Section 6 \u2014 Decision and Records\n\nThe Business Owner approves the renewal. Where the renewal risk review identifies a Critical or High finding without an approved exception, the renewal may not be approved. If the decision is not to renew, the Vendor Manager invokes the exit plan under EXIT-PLN at least 60 days before expiry for Tier 1 and Tier 2 vendors. Renewal records are retained with the contract under RET-SCH."
+ },
+ {
+  "chunk_id": "DPA-REQ#00",
+  "doc_id": "DPA-REQ",
+  "title": "Data Processing Agreement Requirements",
+  "status": "Current",
+  "section": "1. When a DPA Is Required",
+  "text": "Data Processing Agreement Requirements (DPA-REQ, Current)\nSection: 1. When a DPA Is Required\n\n## 1. When a DPA Is Required\n\nA Data Processing Agreement (DPA) is required before any personal data is shared with a vendor, in any volume, including test or pilot data. \"Personal data\" means any information relating to an identified or identifiable natural person, including client, employee, and prospect data. Pseudonymized data is still personal data. Fully anonymized aggregate data is not, but the Privacy Office must confirm the anonymization method in writing.\n\nA missing DPA cannot be covered by an exception under EXC-PRC. If personal data is involved, the DPA is mandatory."
+ },
+ {
+  "chunk_id": "DPA-REQ#01",
+  "doc_id": "DPA-REQ",
+  "title": "Data Processing Agreement Requirements",
+  "status": "Current",
+  "section": "2. Mandatory Clauses",
+  "text": "Data Processing Agreement Requirements (DPA-REQ, Current)\nSection: 2. Mandatory Clauses\n\n## 2. Mandatory Clauses\n\nLegal uses the Northwind DPA template. Vendor paper is accepted only if it contains every clause below:\n\n1. Processing only on Northwind's documented instructions, with the subject matter, duration, nature, purpose, data categories, and data subject categories listed in an annex.\n2. Confidentiality commitments binding every person authorized to process the data.\n3. Security measures at least equivalent to those evidenced during due diligence (DUE-STD \u00a74).\n4. Sub-processor controls: no new sub-processor without 30 days' prior written notice to Northwind and a right to object. Sub-processors are fourth parties and are also governed by FRTH-POL.\n5. Assistance with data subject rights requests, with a response to Northwind within 5 business days of a request.\n6. Breach notification within the deadlines in INCN-SLA, and in any case no later than 72 hours after the vendor becomes aware of a personal-data breach.\n7. Assistance with data protection impact assessments and regulator consultations.\n8. Deletion or return of all personal data at the end of the services, with certification, as set out in EXIT-PLN \u00a74.2.\n9. Audit and inspection rights consistent with AUDT-GDE.\n10. A prohibition on using Northwind personal data to train, fine-tune, or improve the vendor's products or models without Northwind's written consent (see AIV-STD).\n11. Liability for sub-processor failures as if they were the vendor's own."
+ },
+ {
+  "chunk_id": "DPA-REQ#02",
+  "doc_id": "DPA-REQ",
+  "title": "Data Processing Agreement Requirements",
+  "status": "Current",
+  "section": "3. International Transfers",
+  "text": "Data Processing Agreement Requirements (DPA-REQ, Current)\nSection: 3. International Transfers\n\n## 3. International Transfers\n\nPersonal data may not be transferred or made accessible outside the jurisdiction in which it was collected without Legal approval. Transfers out of the EU, EEA, or UK require an approved transfer mechanism, normally the Standard Contractual Clauses or the UK International Data Transfer Addendum, plus a transfer impact assessment completed by Privacy Counsel. Remote access from another country counts as a transfer."
+ },
+ {
+  "chunk_id": "DPA-REQ#03",
+  "doc_id": "DPA-REQ",
+  "title": "Data Processing Agreement Requirements",
+  "status": "Current",
+  "section": "4. Data Minimization",
+  "text": "Data Processing Agreement Requirements (DPA-REQ, Current)\nSection: 4. Data Minimization\n\n## 4. Data Minimization\n\nThe Business Owner must justify each data category in the processing annex. Legal will strike categories that are not needed for the stated purpose. Sharing data beyond the annex is a breach of this standard and of the DPA."
+ },
+ {
+  "chunk_id": "DPA-REQ#04",
+  "doc_id": "DPA-REQ",
+  "title": "Data Processing Agreement Requirements",
+  "status": "Current",
+  "section": "5. Review and Amendment",
+  "text": "Data Processing Agreement Requirements (DPA-REQ, Current)\nSection: 5. Review and Amendment\n\n## 5. Review and Amendment\n\nThe DPA is reviewed at each renewal (RNW-PRC) and whenever processing changes. A new data category, a new purpose, or a new processing location requires a DPA amendment before the change takes effect."
+ },
+ {
+  "chunk_id": "DPA-REQ#05",
+  "doc_id": "DPA-REQ",
+  "title": "Data Processing Agreement Requirements",
+  "status": "Current",
+  "section": "6. Roles",
+  "text": "Data Processing Agreement Requirements (DPA-REQ, Current)\nSection: 6. Roles\n\n## 6. Roles\n\nPrivacy Counsel approves non-standard DPA language. The TPRM Office confirms a signed DPA is on file before onboarding approval (ONB-PRC Step 5). The Vendor Manager tracks sub-processor notices and forwards them to the Privacy Office within 2 business days of receipt."
+ },
+ {
+  "chunk_id": "DUE-OLD#00",
+  "doc_id": "DUE-OLD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "SUPERSEDED by DUE-STD",
+  "section": "Preamble",
+  "text": "Vendor Due Diligence Standard (DUE-OLD, SUPERSEDED by DUE-STD)\nSection: Preamble\n\n> STATUS NOTICE: This version is SUPERSEDED by DUE-STD (Vendor Due Diligence Standard v3.0, effective 2026-03-01). It is retained for audit reference only. Do not apply these requirements to new or existing vendors."
+ },
+ {
+  "chunk_id": "DUE-OLD#01",
+  "doc_id": "DUE-OLD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "SUPERSEDED by DUE-STD",
+  "section": "1 Purpose",
+  "text": "Vendor Due Diligence Standard (DUE-OLD, SUPERSEDED by DUE-STD)\nSection: 1 Purpose\n\n## 1 Purpose\n\nThis standard describes the due diligence the Vendor Risk Management Team performs before Northwind contracts with a supplier and at periodic review. It supports the Third-Party Risk Management Policy."
+ },
+ {
+  "chunk_id": "DUE-OLD#02",
+  "doc_id": "DUE-OLD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "SUPERSEDED by DUE-STD",
+  "section": "2 Scope",
+  "text": "Vendor Due Diligence Standard (DUE-OLD, SUPERSEDED by DUE-STD)\nSection: 2 Scope\n\n## 2 Scope\n\nAll suppliers with an annual contract value above $25,000. Suppliers below this value are exempt from due diligence."
+ },
+ {
+  "chunk_id": "DUE-OLD#03",
+  "doc_id": "DUE-OLD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "SUPERSEDED by DUE-STD",
+  "section": "3 Timing",
+  "text": "Vendor Due Diligence Standard (DUE-OLD, SUPERSEDED by DUE-STD)\nSection: 3 Timing\n\n## 3 Timing\n\nDue diligence should be completed before contract signature where practicable. Where business urgency requires, the contract may be signed with diligence completed within 30 days afterwards, subject to Business Owner sign-off.\n\nDiligence results are valid for 180 days from approval."
+ },
+ {
+  "chunk_id": "DUE-OLD#04",
+  "doc_id": "DUE-OLD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "SUPERSEDED by DUE-STD",
+  "section": "4 Assessment Evidence",
+  "text": "Vendor Due Diligence Standard (DUE-OLD, SUPERSEDED by DUE-STD)\nSection: 4 Assessment Evidence\n\n## 4 Assessment Evidence"
+ },
+ {
+  "chunk_id": "DUE-OLD#05",
+  "doc_id": "DUE-OLD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "SUPERSEDED by DUE-STD",
+  "section": "4.1 Questionnaire",
+  "text": "Vendor Due Diligence Standard (DUE-OLD, SUPERSEDED by DUE-STD)\nSection: 4.1 Questionnaire\n\n### 4.1 Questionnaire\n\nTier 1 and Tier 2 suppliers complete the Standard Vendor Questionnaire. Tier 3 and Tier 4 suppliers are not required to complete a questionnaire."
+ },
+ {
+  "chunk_id": "DUE-OLD#06",
+  "doc_id": "DUE-OLD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "SUPERSEDED by DUE-STD",
+  "section": "4.2 Assurance Reports",
+  "text": "Vendor Due Diligence Standard (DUE-OLD, SUPERSEDED by DUE-STD)\nSection: 4.2 Assurance Reports\n\n### 4.2 Assurance Reports\n\nTier 1 and Tier 2 suppliers provide a SOC 2 report. Either a SOC 2 Type I or a SOC 2 Type II report is accepted. The report must be dated no more than 18 months before the review date. An ISO/IEC 27001 certificate may substitute for any tier without further approval."
+ },
+ {
+  "chunk_id": "DUE-OLD#07",
+  "doc_id": "DUE-OLD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "SUPERSEDED by DUE-STD",
+  "section": "4.3 Penetration Testing",
+  "text": "Vendor Due Diligence Standard (DUE-OLD, SUPERSEDED by DUE-STD)\nSection: 4.3 Penetration Testing\n\n### 4.3 Penetration Testing\n\nPenetration test results are requested for Tier 1 suppliers where available. Absence of a test is not a finding."
+ },
+ {
+  "chunk_id": "DUE-OLD#08",
+  "doc_id": "DUE-OLD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "SUPERSEDED by DUE-STD",
+  "section": "4.4 Financial Review",
+  "text": "Vendor Due Diligence Standard (DUE-OLD, SUPERSEDED by DUE-STD)\nSection: 4.4 Financial Review\n\n### 4.4 Financial Review\n\nFinancial statements are reviewed for Tier 1 suppliers only."
+ },
+ {
+  "chunk_id": "DUE-OLD#09",
+  "doc_id": "DUE-OLD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "SUPERSEDED by DUE-STD",
+  "section": "5 Periodic Review",
+  "text": "Vendor Due Diligence Standard (DUE-OLD, SUPERSEDED by DUE-STD)\nSection: 5 Periodic Review\n\n## 5 Periodic Review\n\n| Tier | Review frequency |\n|---|---|\n| Tier 1 | Every 24 months |\n| Tier 2 | Every 36 months |\n| Tier 3 | At renewal only |\n| Tier 4 | Not reviewed |\n\nThe relationship owner starts the review 30 days before the due date."
+ },
+ {
+  "chunk_id": "DUE-OLD#10",
+  "doc_id": "DUE-OLD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "SUPERSEDED by DUE-STD",
+  "section": "6 Findings",
+  "text": "Vendor Due Diligence Standard (DUE-OLD, SUPERSEDED by DUE-STD)\nSection: 6 Findings\n\n## 6 Findings\n\nHigh findings must have a remediation plan agreed before contract signature; remediation itself may complete after onboarding. Medium findings must be remediated within 12 months. Low findings are not tracked."
+ },
+ {
+  "chunk_id": "DUE-OLD#11",
+  "doc_id": "DUE-OLD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "SUPERSEDED by DUE-STD",
+  "section": "7 Sanctions",
+  "text": "Vendor Due Diligence Standard (DUE-OLD, SUPERSEDED by DUE-STD)\nSection: 7 Sanctions\n\n## 7 Sanctions\n\nSuppliers are screened against sanctions lists at onboarding and annually thereafter."
+ },
+ {
+  "chunk_id": "DUE-OLD#12",
+  "doc_id": "DUE-OLD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "SUPERSEDED by DUE-STD",
+  "section": "8 Records",
+  "text": "Vendor Due Diligence Standard (DUE-OLD, SUPERSEDED by DUE-STD)\nSection: 8 Records\n\n## 8 Records\n\nDue diligence files are retained for 5 years after the review date."
+ },
+ {
+  "chunk_id": "DUE-STD#00",
+  "doc_id": "DUE-STD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "Current",
+  "section": "1. Purpose",
+  "text": "Vendor Due Diligence Standard (DUE-STD, Current)\nSection: 1. Purpose\n\n## 1. Purpose\n\nThis standard defines the evidence Northwind collects before contracting with a vendor and at each reassessment. It implements TPR-POL \u00a74.2 and replaces the Vendor Due Diligence Standard v2.1 (DUE-OLD) in full."
+ },
+ {
+  "chunk_id": "DUE-STD#01",
+  "doc_id": "DUE-STD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "Current",
+  "section": "2. Scope",
+  "text": "Vendor Due Diligence Standard (DUE-STD, Current)\nSection: 2. Scope\n\n## 2. Scope\n\nAll new vendors and all existing vendors at reassessment. The tier assigned under TIER-MTX determines which sections apply."
+ },
+ {
+  "chunk_id": "DUE-STD#02",
+  "doc_id": "DUE-STD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "Current",
+  "section": "3. Timing",
+  "text": "Vendor Due Diligence Standard (DUE-STD, Current)\nSection: 3. Timing\n\n## 3. Timing\n\n3.1 Due diligence must be completed and approved by the TPRM Office before contract signature. Procurement may not issue a purchase order against an unapproved vendor.\n\n3.2 Diligence results are valid for 90 days. If the contract is not executed within 90 days of approval, the TPRM Office refreshes the sanctions screening and confirms no material change before signature."
+ },
+ {
+  "chunk_id": "DUE-STD#03",
+  "doc_id": "DUE-STD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "Current",
+  "section": "4. Assessment Evidence",
+  "text": "Vendor Due Diligence Standard (DUE-STD, Current)\nSection: 4. Assessment Evidence\n\n## 4. Assessment Evidence"
+ },
+ {
+  "chunk_id": "DUE-STD#04",
+  "doc_id": "DUE-STD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "Current",
+  "section": "4.1 Security Questionnaire",
+  "text": "Vendor Due Diligence Standard (DUE-STD, Current)\nSection: 4.1 Security Questionnaire\n\n### 4.1 Security Questionnaire\n\nTier 1 and Tier 2 vendors complete the full Northwind Security Questionnaire (NSQ). Tier 3 vendors complete the NSQ Lite. The CISO office reviews responses and may request supporting evidence for any answer."
+ },
+ {
+  "chunk_id": "DUE-STD#05",
+  "doc_id": "DUE-STD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "Current",
+  "section": "4.2 Independent Assurance Reports",
+  "text": "Vendor Due Diligence Standard (DUE-STD, Current)\nSection: 4.2 Independent Assurance Reports\n\n### 4.2 Independent Assurance Reports\n\nTier 1 and Tier 2 vendors must provide a SOC 2 Type II report. The report must cover a period of at least 6 months and must be dated no more than 12 months before the review date. SOC 2 Type I reports are not accepted as a substitute, because they test control design at a point in time and not operating effectiveness. An ISO/IEC 27001 certificate with its Statement of Applicability may substitute for a Tier 2 vendor only with written CISO office approval. Bridge letters are accepted to cover a gap of up to 3 months after the report period end."
+ },
+ {
+  "chunk_id": "DUE-STD#06",
+  "doc_id": "DUE-STD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "Current",
+  "section": "4.3 Penetration Testing",
+  "text": "Vendor Due Diligence Standard (DUE-STD, Current)\nSection: 4.3 Penetration Testing\n\n### 4.3 Penetration Testing\n\nTier 1 vendors provide an executive summary of an independent penetration test performed within the last 12 months, including the status of any critical or high findings."
+ },
+ {
+  "chunk_id": "DUE-STD#07",
+  "doc_id": "DUE-STD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "Current",
+  "section": "4.4 Other Evidence",
+  "text": "Vendor Due Diligence Standard (DUE-STD, Current)\nSection: 4.4 Other Evidence\n\n### 4.4 Other Evidence\n\nFinancial health is reviewed under FIN-STD, sanctions and adverse media under SANC-PRC, continuity under BCP-REQ, and cloud-specific controls under CLD-STD. AI service providers also complete the AIV-STD addendum."
+ },
+ {
+  "chunk_id": "DUE-STD#08",
+  "doc_id": "DUE-STD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "Current",
+  "section": "5. Reassessment",
+  "text": "Vendor Due Diligence Standard (DUE-STD, Current)\nSection: 5. Reassessment\n\n## 5. Reassessment\n\nReassessment frequency follows TIER-MTX \u00a73:\n\n- Tier 1: every 12 months\n- Tier 2: every 24 months\n- Tier 3: every 36 months\n- Tier 4: at renewal only\n\nThe Vendor Manager starts the reassessment no later than 60 days before the due date. A reassessment more than 30 days overdue is reported to the TPRC and blocks contract renewal (RNW-PRC)."
+ },
+ {
+  "chunk_id": "DUE-STD#09",
+  "doc_id": "DUE-STD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "Current",
+  "section": "6. Findings",
+  "text": "Vendor Due Diligence Standard (DUE-STD, Current)\nSection: 6. Findings\n\n## 6. Findings\n\n6.1 The CISO office rates each finding Critical, High, Medium, or Low.\n\n6.2 Critical and High findings must be remediated, or covered by an approved exception under EXC-PRC, before onboarding or renewal proceeds.\n\n6.3 Medium findings require a vendor remediation plan with a target date no more than 180 days out. Low findings are recorded and tracked at the next reassessment."
+ },
+ {
+  "chunk_id": "DUE-STD#10",
+  "doc_id": "DUE-STD",
+  "title": "Vendor Due Diligence Standard",
+  "status": "Current",
+  "section": "7. Records",
+  "text": "Vendor Due Diligence Standard (DUE-STD, Current)\nSection: 7. Records\n\n## 7. Records\n\nThe completed due diligence file is retained under RET-SCH."
+ },
+ {
+  "chunk_id": "FRTH-POL#00",
+  "doc_id": "FRTH-POL",
+  "title": "Fourth-Party (Subcontractor) Policy",
+  "status": "Current",
+  "section": "1. Purpose",
+  "text": "Fourth-Party (Subcontractor) Policy (FRTH-POL, Current)\nSection: 1. Purpose\n\n## 1. Purpose\n\nOur vendors' vendors are our risk too. When a vendor subcontracts part of a service, Northwind data and Northwind services may depend on a party with which Northwind has no contract. This policy defines how those fourth parties are disclosed, approved, and monitored."
+ },
+ {
+  "chunk_id": "FRTH-POL#01",
+  "doc_id": "FRTH-POL",
+  "title": "Fourth-Party (Subcontractor) Policy",
+  "status": "Current",
+  "section": "2. Definitions",
+  "text": "Fourth-Party (Subcontractor) Policy (FRTH-POL, Current)\nSection: 2. Definitions\n\n## 2. Definitions\n\n- **Fourth party** \u2014 any subcontractor, sub-processor, or supplier used by a Northwind vendor in delivering services to Northwind.\n- **Material subcontractor** \u2014 a fourth party that (a) stores, processes, or can access Northwind Confidential or Restricted data or personal data; (b) performs a part of the service whose failure would disrupt a critical or important business service; or (c) hosts the vendor's production environment."
+ },
+ {
+  "chunk_id": "FRTH-POL#02",
+  "doc_id": "FRTH-POL",
+  "title": "Fourth-Party (Subcontractor) Policy",
+  "status": "Current",
+  "section": "3. Disclosure",
+  "text": "Fourth-Party (Subcontractor) Policy (FRTH-POL, Current)\nSection: 3. Disclosure\n\n## 3. Disclosure\n\n3.1 Tier 1 and Tier 2 vendors must disclose all material subcontractors during due diligence, including name, location, services performed, and data accessed.\n\n3.2 Tier 1 vendors must give Northwind at least 60 days' prior written notice before adding or replacing a material subcontractor. Tier 2 vendors must give at least 30 days' notice, which aligns with the sub-processor notice period in DPA-REQ.\n\n3.3 Northwind may object to a new material subcontractor. If the objection cannot be resolved, Northwind may terminate the affected services without penalty."
+ },
+ {
+  "chunk_id": "FRTH-POL#03",
+  "doc_id": "FRTH-POL",
+  "title": "Fourth-Party (Subcontractor) Policy",
+  "status": "Current",
+  "section": "4. Approval",
+  "text": "Fourth-Party (Subcontractor) Policy (FRTH-POL, Current)\nSection: 4. Approval\n\n## 4. Approval\n\n4.1 The TPRM Office assesses each new material subcontractor of a Tier 1 or Tier 2 vendor. The assessment covers security posture, location, sanctions screening (SANC-PRC), and concentration (CONC-STD).\n\n4.2 Offshore subcontracting, meaning any material subcontractor performing services or accessing data outside the country in which the contracted vendor operates, requires approval from both the TPRM Office and Legal.\n\n4.3 A new material subcontractor triggers an early reassessment of the vendor under TIER-MTX \u00a73."
+ },
+ {
+  "chunk_id": "FRTH-POL#04",
+  "doc_id": "FRTH-POL",
+  "title": "Fourth-Party (Subcontractor) Policy",
+  "status": "Current",
+  "section": "5. Flow-Down",
+  "text": "Fourth-Party (Subcontractor) Policy (FRTH-POL, Current)\nSection: 5. Flow-Down\n\n## 5. Flow-Down\n\nThe vendor contract must require the vendor to flow down to each material subcontractor obligations no less protective than its own for:\n\n- confidentiality and data protection;\n- information security;\n- incident notification (INCN-SLA);\n- business continuity (BCP-REQ);\n- audit and regulator access (AUDT-GDE);\n- data return and destruction at exit (EXIT-PLN).\n\nThe vendor remains fully liable for its subcontractors' performance and failures."
+ },
+ {
+  "chunk_id": "FRTH-POL#05",
+  "doc_id": "FRTH-POL",
+  "title": "Fourth-Party (Subcontractor) Policy",
+  "status": "Current",
+  "section": "6. Inventory",
+  "text": "Fourth-Party (Subcontractor) Policy (FRTH-POL, Current)\nSection: 6. Inventory\n\n## 6. Inventory\n\nThe TPRM Office maintains a fourth-party inventory listing each material subcontractor and the vendors that depend on it. Tier 1 and Tier 2 vendors confirm their subcontractor list annually, and the inventory is updated within 10 business days of any notice under 3.2. The inventory feeds the quarterly concentration report under CONC-STD."
+ },
+ {
+  "chunk_id": "FRTH-POL#06",
+  "doc_id": "FRTH-POL",
+  "title": "Fourth-Party (Subcontractor) Policy",
+  "status": "Current",
+  "section": "7. Incidents at a Fourth Party",
+  "text": "Fourth-Party (Subcontractor) Policy (FRTH-POL, Current)\nSection: 7. Incidents at a Fourth Party\n\n## 7. Incidents at a Fourth Party\n\nAn incident at a material subcontractor that affects Northwind data or services must be notified by the vendor as if it occurred at the vendor, under the deadlines in INCN-SLA. \"Our subcontractor did not tell us\" is not a defense under Northwind contracts."
+ },
+ {
+  "chunk_id": "FRTH-POL#07",
+  "doc_id": "FRTH-POL",
+  "title": "Fourth-Party (Subcontractor) Policy",
+  "status": "Current",
+  "section": "8. Ownership",
+  "text": "Fourth-Party (Subcontractor) Policy (FRTH-POL, Current)\nSection: 8. Ownership\n\n## 8. Ownership\n\nQuestions on this policy go to the TPRM Office. Contract drafting questions go to Legal."
+ },
+ {
+  "chunk_id": "PRC-POL#00",
+  "doc_id": "PRC-POL",
+  "title": "Procurement Policy",
+  "status": "Current",
+  "section": "1. Purpose",
+  "text": "Procurement Policy (PRC-POL, Current)\nSection: 1. Purpose\n\n## 1. Purpose\n\nThis policy ensures Northwind buys goods and services fairly, at a defensible price, and with the right approvals. It works alongside TPR-POL: procurement decides how we choose a vendor, TPRM decides whether the chosen vendor is safe to use."
+ },
+ {
+  "chunk_id": "PRC-POL#01",
+  "doc_id": "PRC-POL",
+  "title": "Procurement Policy",
+  "status": "Current",
+  "section": "2. Scope",
+  "text": "Procurement Policy (PRC-POL, Current)\nSection: 2. Scope\n\n## 2. Scope\n\nAll purchases of goods and services by any Northwind entity, regardless of funding source. Excluded: employee expense reimbursements, payroll, taxes, and payments to regulators."
+ },
+ {
+  "chunk_id": "PRC-POL#02",
+  "doc_id": "PRC-POL",
+  "title": "Procurement Policy",
+  "status": "Current",
+  "section": "3. Competitive Sourcing Thresholds",
+  "text": "Procurement Policy (PRC-POL, Current)\nSection: 3. Competitive Sourcing Thresholds\n\n## 3. Competitive Sourcing Thresholds\n\nThe threshold is based on the total contract value over the full initial term, including optional extensions.\n\n| Total contract value | Minimum sourcing requirement |\n|---|---|\n| Under $25,000 | One written quote |\n| $25,000 to $250,000 | Two written quotes |\n| More than $250,000 | Three competitive bids through a formal RFP run by Procurement |\n\nSplitting a requirement into smaller purchases to stay under a threshold is prohibited and is treated as a policy breach."
+ },
+ {
+  "chunk_id": "PRC-POL#03",
+  "doc_id": "PRC-POL",
+  "title": "Procurement Policy",
+  "status": "Current",
+  "section": "4. Sole-Source Justification",
+  "text": "Procurement Policy (PRC-POL, Current)\nSection: 4. Sole-Source Justification\n\n## 4. Sole-Source Justification\n\n4.1 Where competitive sourcing is not possible, the Business Owner submits a sole-source justification in ProcureNet. Acceptable grounds are limited to: only one supplier can meet the requirement; continuation of an existing proprietary system where switching cost is prohibitive; a documented emergency; or a regulator-mandated provider.\n\n4.2 Sole-source justifications are approved by the Head of Procurement. Where the total contract value exceeds $1,000,000, the CFO must also approve.\n\n4.3 Cost or convenience alone is not an acceptable ground. \"The team already likes this vendor\" is not a justification."
+ },
+ {
+  "chunk_id": "PRC-POL#04",
+  "doc_id": "PRC-POL",
+  "title": "Procurement Policy",
+  "status": "Current",
+  "section": "5. Approval Authority",
+  "text": "Procurement Policy (PRC-POL, Current)\nSection: 5. Approval Authority\n\n## 5. Approval Authority\n\n| Total contract value | Approver |\n|---|---|\n| Up to $100,000 | Department head |\n| $100,001 to $1,000,000 | Managing director of the business unit |\n| More than $1,000,000 | CFO |\n\nApprovals are recorded in ProcureNet. The approver must not be the requester."
+ },
+ {
+  "chunk_id": "PRC-POL#05",
+  "doc_id": "PRC-POL",
+  "title": "Procurement Policy",
+  "status": "Current",
+  "section": "6. No PO, No Pay",
+  "text": "Procurement Policy (PRC-POL, Current)\nSection: 6. No PO, No Pay\n\n## 6. No PO, No Pay\n\nEvery purchase over $5,000 requires an approved purchase order before the vendor begins work. Accounts Payable will not pay invoices that do not match an approved purchase order. A purchase order cannot be raised until the vendor is active under ONB-PRC."
+ },
+ {
+  "chunk_id": "PRC-POL#06",
+  "doc_id": "PRC-POL",
+  "title": "Procurement Policy",
+  "status": "Current",
+  "section": "7. Evaluation and Award",
+  "text": "Procurement Policy (PRC-POL, Current)\nSection: 7. Evaluation and Award\n\n## 7. Evaluation and Award\n\n7.1 RFP evaluation criteria and weights are fixed before bids are opened. Risk criteria, including the vendor's likely tier under TIER-MTX, must carry at least 20% of the total weight for any RFP where the vendor will access Confidential or Restricted data.\n\n7.2 Evaluators sign a conflict-of-interest declaration before reviewing bids (GIFT-POL). A conflicted evaluator must recuse.\n\n7.3 Unsuccessful bidders are notified in writing within 10 business days of award."
+ },
+ {
+  "chunk_id": "PRC-POL#07",
+  "doc_id": "PRC-POL",
+  "title": "Procurement Policy",
+  "status": "Current",
+  "section": "8. Renewals and Changes",
+  "text": "Procurement Policy (PRC-POL, Current)\nSection: 8. Renewals and Changes\n\n## 8. Renewals and Changes\n\nRenewals follow RNW-PRC. A change order that increases total contract value by more than 20% requires the same approval as a new purchase of the revised total value."
+ },
+ {
+  "chunk_id": "PRC-POL#08",
+  "doc_id": "PRC-POL",
+  "title": "Procurement Policy",
+  "status": "Current",
+  "section": "9. Breaches",
+  "text": "Procurement Policy (PRC-POL, Current)\nSection: 9. Breaches\n\n## 9. Breaches\n\nPurchases made outside this policy are reported to the Head of Procurement and, where the vendor was not onboarded, to the TPRC as a TPR-POL breach."
+ },
+ {
+  "chunk_id": "AUDT-GDE#00",
+  "doc_id": "AUDT-GDE",
+  "title": "Right-to-Audit Clause Guide",
+  "status": "Current",
+  "section": "Section 1 \u2014 Why This Matters",
+  "text": "Right-to-Audit Clause Guide (AUDT-GDE, Current)\nSection: Section 1 \u2014 Why This Matters\n\n## Section 1 \u2014 Why This Matters\n\nNorthwind's regulators expect us to be able to examine how our outsourced services are actually run, not just what the vendor says about them. A right-to-audit clause is how we keep that ability after signature. This guide explains what the clause must contain and which concessions negotiators can and cannot make."
+ },
+ {
+  "chunk_id": "AUDT-GDE#01",
+  "doc_id": "AUDT-GDE",
+  "title": "Right-to-Audit Clause Guide",
+  "status": "Current",
+  "section": "Section 2 \u2014 When the Clause Is Required",
+  "text": "Right-to-Audit Clause Guide (AUDT-GDE, Current)\nSection: Section 2 \u2014 When the Clause Is Required\n\n## Section 2 \u2014 When the Clause Is Required\n\nA right-to-audit clause is required in every Tier 1 and Tier 2 contract. It is recommended for Tier 3 contracts and is not required for Tier 4 (TIER-MTX \u00a74)."
+ },
+ {
+  "chunk_id": "AUDT-GDE#02",
+  "doc_id": "AUDT-GDE",
+  "title": "Right-to-Audit Clause Guide",
+  "status": "Current",
+  "section": "Section 3 \u2014 Required Elements",
+  "text": "Right-to-Audit Clause Guide (AUDT-GDE, Current)\nSection: Section 3 \u2014 Required Elements\n\n## Section 3 \u2014 Required Elements\n\nThe clause must give Northwind, its internal audit function, its external auditors, and its regulators the right to:\n\n- inspect premises, systems, records, and personnel involved in delivering the services;\n- obtain copies of policies, procedures, and evidence of control operation;\n- extend these rights to material subcontractors (FRTH-POL)."
+ },
+ {
+  "chunk_id": "AUDT-GDE#03",
+  "doc_id": "AUDT-GDE",
+  "title": "Right-to-Audit Clause Guide",
+  "status": "Current",
+  "section": "3.1 Notice",
+  "text": "Right-to-Audit Clause Guide (AUDT-GDE, Current)\nSection: 3.1 Notice\n\n### 3.1 Notice\n\nRoutine audits may require up to 30 days' prior written notice. For-cause audits, triggered by a security incident, a regulatory request, or a suspected material breach of contract, may require no more than 10 business days' notice."
+ },
+ {
+  "chunk_id": "AUDT-GDE#04",
+  "doc_id": "AUDT-GDE",
+  "title": "Right-to-Audit Clause Guide",
+  "status": "Current",
+  "section": "3.2 Frequency",
+  "text": "Right-to-Audit Clause Guide (AUDT-GDE, Current)\nSection: 3.2 Frequency\n\n### 3.2 Frequency\n\nThe vendor may limit routine audits to once per 12-month period. For-cause audits and regulator audits may not be limited in number."
+ },
+ {
+  "chunk_id": "AUDT-GDE#05",
+  "doc_id": "AUDT-GDE",
+  "title": "Right-to-Audit Clause Guide",
+  "status": "Current",
+  "section": "3.3 Regulator Access",
+  "text": "Right-to-Audit Clause Guide (AUDT-GDE, Current)\nSection: 3.3 Regulator Access\n\n### 3.3 Regulator Access\n\nRegulator access must be unconditional. The clause may not require regulators to give notice, sign confidentiality agreements with the vendor, or bear the vendor's costs. Do not accept any wording that makes regulator access subject to the vendor's consent."
+ },
+ {
+  "chunk_id": "AUDT-GDE#06",
+  "doc_id": "AUDT-GDE",
+  "title": "Right-to-Audit Clause Guide",
+  "status": "Current",
+  "section": "3.4 Cost",
+  "text": "Right-to-Audit Clause Guide (AUDT-GDE, Current)\nSection: 3.4 Cost\n\n### 3.4 Cost\n\nEach party bears its own costs for routine audits. The vendor bears the cost of a for-cause audit that confirms a material breach."
+ },
+ {
+  "chunk_id": "AUDT-GDE#07",
+  "doc_id": "AUDT-GDE",
+  "title": "Right-to-Audit Clause Guide",
+  "status": "Current",
+  "section": "Section 4 \u2014 Negotiation Positions",
+  "text": "Right-to-Audit Clause Guide (AUDT-GDE, Current)\nSection: Section 4 \u2014 Negotiation Positions\n\n## Section 4 \u2014 Negotiation Positions\n\nVendors with many clients often resist individual audits. Acceptable concessions:\n\n- **Pooled audits.** Northwind may join a pooled audit with other clients in place of an individual routine audit.\n- **Reliance on assurance reports.** A current SOC 2 Type II report meeting DUE-STD \u00a74.2 may satisfy a routine audit for the controls in its scope. The clause must keep Northwind's right to audit controls outside the report's scope.\n- **Remote audits.** Routine audits may be conducted remotely by default, with on-site access reserved for for-cause audits.\n\nConcessions that are never acceptable: removing regulator access, removing for-cause audits, limiting audits to the vendor's own selection of records, or requiring Northwind to pay for the vendor's staff time on a routine audit beyond 3 days.\n\nAny deviation from Section 3 not listed as an acceptable concession requires an exception under EXC-PRC."
+ },
+ {
+  "chunk_id": "AUDT-GDE#08",
+  "doc_id": "AUDT-GDE",
+  "title": "Right-to-Audit Clause Guide",
+  "status": "Current",
+  "section": "Section 5 \u2014 Exercising the Right",
+  "text": "Right-to-Audit Clause Guide (AUDT-GDE, Current)\nSection: Section 5 \u2014 Exercising the Right\n\n## Section 5 \u2014 Exercising the Right\n\nThe Vendor Manager coordinates audit requests with Internal Audit and the TPRM Office. Audit findings are tracked as due diligence findings under DUE-STD \u00a76."
+ },
+ {
+  "chunk_id": "SANC-PRC#00",
+  "doc_id": "SANC-PRC",
+  "title": "Sanctions and Adverse Media Screening Procedure",
+  "status": "Current",
+  "section": "Section 1 \u2014 Purpose",
+  "text": "Sanctions and Adverse Media Screening Procedure (SANC-PRC, Current)\nSection: Section 1 \u2014 Purpose\n\n## Section 1 \u2014 Purpose\n\nNorthwind may not pay, contract with, or provide services to a sanctioned person. This procedure defines how vendors and their owners are screened and how potential matches are resolved."
+ },
+ {
+  "chunk_id": "SANC-PRC#01",
+  "doc_id": "SANC-PRC",
+  "title": "Sanctions and Adverse Media Screening Procedure",
+  "status": "Current",
+  "section": "Section 2 \u2014 Who Is Screened",
+  "text": "Sanctions and Adverse Media Screening Procedure (SANC-PRC, Current)\nSection: Section 2 \u2014 Who Is Screened\n\n## Section 2 \u2014 Who Is Screened\n\n- The vendor legal entity and any trading names.\n- Beneficial owners holding 25% or more of the vendor. For Tier 1 vendors the threshold is 10% or more.\n- Directors and senior officers named in the vendor's registration documents.\n- Material subcontractors disclosed under FRTH-POL."
+ },
+ {
+  "chunk_id": "SANC-PRC#02",
+  "doc_id": "SANC-PRC",
+  "title": "Sanctions and Adverse Media Screening Procedure",
+  "status": "Current",
+  "section": "Section 3 \u2014 Lists",
+  "text": "Sanctions and Adverse Media Screening Procedure (SANC-PRC, Current)\nSection: Section 3 \u2014 Lists\n\n## Section 3 \u2014 Lists\n\nScreening runs against, at minimum: the OFAC Specially Designated Nationals and Blocked Persons List and the OFAC consolidated non-SDN lists; the UN Security Council Consolidated List; the EU Consolidated Financial Sanctions List; and the UK HM Treasury Consolidated List."
+ },
+ {
+  "chunk_id": "SANC-PRC#03",
+  "doc_id": "SANC-PRC",
+  "title": "Sanctions and Adverse Media Screening Procedure",
+  "status": "Current",
+  "section": "Section 4 \u2014 When Screening Occurs",
+  "text": "Sanctions and Adverse Media Screening Procedure (SANC-PRC, Current)\nSection: Section 4 \u2014 When Screening Occurs\n\n## Section 4 \u2014 When Screening Occurs\n\n4.1 At onboarding, before any diligence evidence is requested (ONB-PRC Step 3).\n\n4.2 Continuously after onboarding. Every active vendor record is rescreened automatically every day against the current lists, regardless of tier.\n\n4.3 Before any change to vendor bank details is applied.\n\n4.4 When the contract is not executed within 90 days of diligence approval (DUE-STD \u00a73.2)."
+ },
+ {
+  "chunk_id": "SANC-PRC#04",
+  "doc_id": "SANC-PRC",
+  "title": "Sanctions and Adverse Media Screening Procedure",
+  "status": "Current",
+  "section": "Section 5 \u2014 Adverse Media",
+  "text": "Sanctions and Adverse Media Screening Procedure (SANC-PRC, Current)\nSection: Section 5 \u2014 Adverse Media\n\n## Section 5 \u2014 Adverse Media\n\nAdverse media screening covers financial crime, fraud, bribery and corruption, sanctions evasion, human-rights abuse, and serious regulatory enforcement. It is performed at onboarding for Tier 1 and Tier 2 vendors and repeated annually for those tiers. Tier 3 and Tier 4 vendors receive sanctions screening only, unless a Business Owner or the TPRM Office requests adverse media screening."
+ },
+ {
+  "chunk_id": "SANC-PRC#05",
+  "doc_id": "SANC-PRC",
+  "title": "Sanctions and Adverse Media Screening Procedure",
+  "status": "Current",
+  "section": "Section 6 \u2014 Match Handling",
+  "text": "Sanctions and Adverse Media Screening Procedure (SANC-PRC, Current)\nSection: Section 6 \u2014 Match Handling\n\n## Section 6 \u2014 Match Handling\n\n6.1 The screening tool generates alerts. Procurement Operations performs first-level review and closes clear false positives, recording the reason.\n\n6.2 Any alert not closed as a false positive must be triaged by Financial Crimes Compliance (FCC) within 2 business days.\n\n6.3 If FCC confirms a true match, it escalates to the Chief Compliance Officer and Legal within 24 hours. All payments to the vendor are blocked immediately, and the vendor master record is placed on hold.\n\n6.4 Northwind staff must not tell the vendor why payments are held. Disclosure may breach sanctions or anti-tipping-off obligations; all communication goes through Legal.\n\n6.5 A confirmed true match cannot be covered by an exception under EXC-PRC. The TPRM Office assesses invoking the stressed exit plan (EXIT-PLN \u00a75)."
+ },
+ {
+  "chunk_id": "SANC-PRC#06",
+  "doc_id": "SANC-PRC",
+  "title": "Sanctions and Adverse Media Screening Procedure",
+  "status": "Current",
+  "section": "Section 7 \u2014 Adverse Media Findings",
+  "text": "Sanctions and Adverse Media Screening Procedure (SANC-PRC, Current)\nSection: Section 7 \u2014 Adverse Media Findings\n\n## Section 7 \u2014 Adverse Media Findings\n\nMaterial adverse media findings are referred to the TPRM Office and the Business Owner. The Business Owner must document a decision to proceed, proceed with conditions, or decline. Findings involving bribery or sanctions evasion also require FCC sign-off to proceed."
+ },
+ {
+  "chunk_id": "SANC-PRC#07",
+  "doc_id": "SANC-PRC",
+  "title": "Sanctions and Adverse Media Screening Procedure",
+  "status": "Current",
+  "section": "Section 8 \u2014 Records",
+  "text": "Sanctions and Adverse Media Screening Procedure (SANC-PRC, Current)\nSection: Section 8 \u2014 Records\n\n## Section 8 \u2014 Records\n\nScreening results, alert dispositions, and FCC decisions are retained under RET-SCH. Records must show who closed each alert and why."
+ },
+ {
+  "chunk_id": "TPR-POL#00",
+  "doc_id": "TPR-POL",
+  "title": "Third-Party Risk Management Policy",
+  "status": "Current",
+  "section": "1. Purpose",
+  "text": "Third-Party Risk Management Policy (TPR-POL, Current)\nSection: 1. Purpose\n\n## 1. Purpose\n\nThis policy establishes how Northwind Capital Group identifies, assesses, contracts with, monitors, and exits third parties. Regulators hold Northwind accountable for activities performed on its behalf, so outsourcing a service never outsources the risk. This policy is the master document for Third-Party Risk Management (TPRM); the standards and procedures it references set the detailed requirements."
+ },
+ {
+  "chunk_id": "TPR-POL#01",
+  "doc_id": "TPR-POL",
+  "title": "Third-Party Risk Management Policy",
+  "status": "Current",
+  "section": "2. Scope",
+  "text": "Third-Party Risk Management Policy (TPR-POL, Current)\nSection: 2. Scope\n\n## 2. Scope\n\nThis policy applies to every employee, contractor, and business unit that engages a third party. A third party is any external entity that provides goods or services to Northwind, receives Northwind data, connects to Northwind systems, or acts on Northwind's behalf with clients or regulators. This includes software-as-a-service providers, consultants, data brokers, outsourced operations, cloud service providers, and AI service providers. Intra-group affiliates are in scope where they provide services under an intercompany agreement.\n\nOut of scope: utilities, government agencies acting in a regulatory capacity, and payments to individuals for employee reimbursements."
+ },
+ {
+  "chunk_id": "TPR-POL#02",
+  "doc_id": "TPR-POL",
+  "title": "Third-Party Risk Management Policy",
+  "status": "Current",
+  "section": "3. Roles and Responsibilities",
+  "text": "Third-Party Risk Management Policy (TPR-POL, Current)\nSection: 3. Roles and Responsibilities\n\n## 3. Roles and Responsibilities\n\n- **Business Owner** \u2014 the senior employee accountable for the relationship. Initiates the engagement, owns the risk, and funds remediation.\n- **Vendor Manager** \u2014 manages the relationship day to day, runs performance reviews (PERF-STD), and recertifies vendor access (ACC-STD).\n- **TPRM Office** \u2014 assigns the risk tier (TIER-MTX), coordinates due diligence (DUE-STD), maintains the third-party inventory, and administers exceptions (EXC-PRC).\n- **Procurement** \u2014 runs sourcing and competitive bidding (PRC-POL) and creates the vendor master record (ONB-PRC).\n- **CISO office** \u2014 performs information security and cloud assessments (DUE-STD, CLD-STD).\n- **Legal** \u2014 negotiates contract terms, including data processing (DPA-REQ) and audit rights (AUDT-GDE).\n- **Financial Crimes Compliance (FCC)** \u2014 adjudicates sanctions and adverse media matches (SANC-PRC)."
+ },
+ {
+  "chunk_id": "TPR-POL#03",
+  "doc_id": "TPR-POL",
+  "title": "Third-Party Risk Management Policy",
+  "status": "Current",
+  "section": "4. Lifecycle Requirements",
+  "text": "Third-Party Risk Management Policy (TPR-POL, Current)\nSection: 4. Lifecycle Requirements\n\n## 4. Lifecycle Requirements"
+ },
+ {
+  "chunk_id": "TPR-POL#04",
+  "doc_id": "TPR-POL",
+  "title": "Third-Party Risk Management Policy",
+  "status": "Current",
+  "section": "4.1 Plan",
+  "text": "Third-Party Risk Management Policy (TPR-POL, Current)\nSection: 4.1 Plan\n\n### 4.1 Plan\n\nBefore approaching a vendor, the Business Owner documents the business need, the data the vendor will access, and the services it will support. The TPRM Office assigns a preliminary tier from this information within 5 business days of intake."
+ },
+ {
+  "chunk_id": "TPR-POL#05",
+  "doc_id": "TPR-POL",
+  "title": "Third-Party Risk Management Policy",
+  "status": "Current",
+  "section": "4.2 Due Diligence",
+  "text": "Third-Party Risk Management Policy (TPR-POL, Current)\nSection: 4.2 Due Diligence\n\n### 4.2 Due Diligence\n\nDue diligence must be completed and approved before contract signature. The depth of diligence is set by tier under DUE-STD. Sanctions screening (SANC-PRC) and, for Tier 1 and Tier 2, financial review (FIN-STD) are part of diligence."
+ },
+ {
+  "chunk_id": "TPR-POL#06",
+  "doc_id": "TPR-POL",
+  "title": "Third-Party Risk Management Policy",
+  "status": "Current",
+  "section": "4.3 Contract",
+  "text": "Third-Party Risk Management Policy (TPR-POL, Current)\nSection: 4.3 Contract\n\n### 4.3 Contract\n\nContracts must include the clauses required for the vendor's tier: data protection, audit rights, incident notification (INCN-SLA), subcontractor controls (FRTH-POL), business continuity (BCP-REQ), and exit assistance (EXIT-PLN). No vendor may receive Northwind data, system access, or payment before onboarding is complete under ONB-PRC."
+ },
+ {
+  "chunk_id": "TPR-POL#07",
+  "doc_id": "TPR-POL",
+  "title": "Third-Party Risk Management Policy",
+  "status": "Current",
+  "section": "4.4 Monitor",
+  "text": "Third-Party Risk Management Policy (TPR-POL, Current)\nSection: 4.4 Monitor\n\n### 4.4 Monitor\n\nVendors are reassessed on the frequency set in TIER-MTX, and performance is monitored under PERF-STD. Concentration across the vendor portfolio is monitored under CONC-STD."
+ },
+ {
+  "chunk_id": "TPR-POL#08",
+  "doc_id": "TPR-POL",
+  "title": "Third-Party Risk Management Policy",
+  "status": "Current",
+  "section": "4.5 Exit",
+  "text": "Third-Party Risk Management Policy (TPR-POL, Current)\nSection: 4.5 Exit\n\n### 4.5 Exit\n\nTier 1 and Tier 2 relationships require a documented exit plan. Termination, data return, and access revocation follow EXIT-PLN."
+ },
+ {
+  "chunk_id": "TPR-POL#09",
+  "doc_id": "TPR-POL",
+  "title": "Third-Party Risk Management Policy",
+  "status": "Current",
+  "section": "5. Governance",
+  "text": "Third-Party Risk Management Policy (TPR-POL, Current)\nSection: 5. Governance\n\n## 5. Governance\n\nThe Third-Party Risk Committee (TPRC), chaired by the Chief Risk Officer, meets monthly. It receives the open exceptions register, the Tier 1 risk dashboard, and the quarterly concentration report. The Board Risk Committee receives an annual TPRM attestation. This policy is reviewed at least annually by the Head of Third-Party Risk Management."
+ },
+ {
+  "chunk_id": "TPR-POL#10",
+  "doc_id": "TPR-POL",
+  "title": "Third-Party Risk Management Policy",
+  "status": "Current",
+  "section": "6. Non-Compliance",
+  "text": "Third-Party Risk Management Policy (TPR-POL, Current)\nSection: 6. Non-Compliance\n\n## 6. Non-Compliance\n\nEngaging a vendor outside this policy is a policy breach and is reported to the TPRC. Repeated or wilful breaches may result in disciplinary action. Where a requirement cannot be met, the Business Owner must request an exception under EXC-PRC before proceeding; retroactive exceptions are recorded as breaches."
+ },
+ {
+  "chunk_id": "EXC-PRC#00",
+  "doc_id": "EXC-PRC",
+  "title": "Third-Party Risk Exception Procedure",
+  "status": "Current",
+  "section": "1. Purpose",
+  "text": "Third-Party Risk Exception Procedure (EXC-PRC, Current)\nSection: 1. Purpose\n\n## 1. Purpose\n\nSometimes a requirement cannot be met on time: a vendor's SOC 2 Type II report is three months late, or a contract cannot be renegotiated before a critical go-live. An exception is a time-bound, approved acceptance of that gap with compensating controls. It is not a waiver, and it is never permanent."
+ },
+ {
+  "chunk_id": "EXC-PRC#01",
+  "doc_id": "EXC-PRC",
+  "title": "Third-Party Risk Exception Procedure",
+  "status": "Current",
+  "section": "2. What Can and Cannot Be Excepted",
+  "text": "Third-Party Risk Exception Procedure (EXC-PRC, Current)\nSection: 2. What Can and Cannot Be Excepted\n\n## 2. What Can and Cannot Be Excepted\n\nAny requirement in a TPRM standard or procedure may be excepted except:\n\n- proceeding with a vendor that is a confirmed sanctions true match (SANC-PRC \u00a76.5);\n- sharing personal data without an executed DPA (DPA-REQ \u00a71);\n- removing regulator access rights from a contract (AUDT-GDE \u00a73.3);\n- retroactive approval of a gap that already caused a policy breach. A retroactive request is recorded as a breach under TPR-POL \u00a76 and may then be excepted going forward."
+ },
+ {
+  "chunk_id": "EXC-PRC#02",
+  "doc_id": "EXC-PRC",
+  "title": "Third-Party Risk Exception Procedure",
+  "status": "Current",
+  "section": "3. Requesting an Exception",
+  "text": "Third-Party Risk Exception Procedure (EXC-PRC, Current)\nSection: 3. Requesting an Exception\n\n## 3. Requesting an Exception\n\nThe Business Owner submits an exception request in ProcureNet. The request must include:\n\n1. the requirement not met, with the doc_id and section reference;\n2. the reason it cannot be met;\n3. the risk created, assessed by the TPRM Office as Critical, High, Medium, or Low;\n4. compensating controls, with owners and dates;\n5. the remediation plan that will close the gap;\n6. the requested duration.\n\nRequests without compensating controls are returned unreviewed."
+ },
+ {
+  "chunk_id": "EXC-PRC#03",
+  "doc_id": "EXC-PRC",
+  "title": "Third-Party Risk Exception Procedure",
+  "status": "Current",
+  "section": "4. Approval Authority",
+  "text": "Third-Party Risk Exception Procedure (EXC-PRC, Current)\nSection: 4. Approval Authority\n\n## 4. Approval Authority\n\n| Vendor tier | Approver |\n|---|---|\n| Tier 3 and Tier 4 | Head of Third-Party Risk Management |\n| Tier 2 | Head of Third-Party Risk Management, plus the CISO for any security-related exception |\n| Tier 1 | Chief Risk Officer, after recommendation by the Head of Third-Party Risk Management |\n\nAny exception rated Critical risk requires Chief Risk Officer approval regardless of tier. The approver may not be in the reporting line of the Business Owner requesting the exception."
+ },
+ {
+  "chunk_id": "EXC-PRC#04",
+  "doc_id": "EXC-PRC",
+  "title": "Third-Party Risk Exception Procedure",
+  "status": "Current",
+  "section": "5. Duration",
+  "text": "Third-Party Risk Exception Procedure (EXC-PRC, Current)\nSection: 5. Duration\n\n## 5. Duration\n\n5.1 The maximum duration of an exception is 180 days.\n\n5.2 An exception may be extended once, for up to 90 days, by the original approval authority, only if the remediation plan has made documented progress.\n\n5.3 A need beyond 270 days in total must be escalated to the TPRC, which may require the Business Owner to exit the vendor (EXIT-PLN) or formally accept the risk on behalf of the business unit."
+ },
+ {
+  "chunk_id": "EXC-PRC#05",
+  "doc_id": "EXC-PRC",
+  "title": "Third-Party Risk Exception Procedure",
+  "status": "Current",
+  "section": "6. Compensating Controls",
+  "text": "Third-Party Risk Exception Procedure (EXC-PRC, Current)\nSection: 6. Compensating Controls\n\n## 6. Compensating Controls\n\nCompensating controls must reduce the specific risk the gap creates. Examples:\n\n- a late SOC 2 Type II report covered by a bridge letter plus a CISO office review of the vendor's key controls;\n- a missing right-to-audit clause covered by quarterly attestation and an on-site visit before renewal;\n- a lapsed reassessment covered by a focused review of changes since the last assessment.\n\nMonitoring that only means \"the Vendor Manager will keep an eye on it\" is not a compensating control."
+ },
+ {
+  "chunk_id": "EXC-PRC#06",
+  "doc_id": "EXC-PRC",
+  "title": "Third-Party Risk Exception Procedure",
+  "status": "Current",
+  "section": "7. Register and Reporting",
+  "text": "Third-Party Risk Exception Procedure (EXC-PRC, Current)\nSection: 7. Register and Reporting\n\n## 7. Register and Reporting\n\nThe TPRM Office maintains the exceptions register. Open exceptions are reported monthly to the TPRC, with any exception due to expire within 30 days highlighted. On expiry, the exception closes automatically; if the gap remains, the TPRM Office records a breach. Exception records are retained under RET-SCH."
+ },
+ {
+  "chunk_id": "RET-SCH#00",
+  "doc_id": "RET-SCH",
+  "title": "TPRM Records Retention Schedule",
+  "status": "Current",
+  "section": "1. Purpose",
+  "text": "TPRM Records Retention Schedule (RET-SCH, Current)\nSection: 1. Purpose\n\n## 1. Purpose\n\nThis schedule sets how long Third-Party Risk Management and Procurement records are kept and when they must be destroyed. Keeping records too short a time breaches regulatory record-keeping rules; keeping them too long breaches data minimization obligations and increases breach exposure. Both are violations."
+ },
+ {
+  "chunk_id": "RET-SCH#01",
+  "doc_id": "RET-SCH",
+  "title": "TPRM Records Retention Schedule",
+  "status": "Current",
+  "section": "2. Retention Periods",
+  "text": "TPRM Records Retention Schedule (RET-SCH, Current)\nSection: 2. Retention Periods\n\n## 2. Retention Periods\n\n| Record type | Retention period | Trigger | Disposal |\n|---|---|---|---|\n| Due diligence files (DUE-STD), including questionnaires and assurance reports | 7 years | End of the vendor relationship | Secure deletion |\n| Executed contracts, amendments, and DPAs | 7 years | Contract termination or expiry | Secure deletion |\n| Renewal risk reviews (RNW-PRC) | 7 years | Contract termination or expiry | Secure deletion |\n| Sanctions and adverse media screening results and alert dispositions (SANC-PRC) | 5 years | End of the vendor relationship | Secure deletion |\n| Vendor incident records (INCN-SLA) | 7 years | Incident closure | Secure deletion |\n| Data destruction and exit certificates (EXIT-PLN) | 10 years | Date of certificate | Secure deletion |\n| Exception records (EXC-PRC) | 7 years | Exception expiry or closure | Secure deletion |\n| Performance scorecards and QBR minutes (PERF-STD) | 3 years | Date of scorecard | Secure deletion |\n| Gifts and entertainment register entries (GIFT-POL) | 5 years | Date of entry | Secure deletion |\n| Vendor access recertification evidence (ACC-STD) | 3 years | Date of recertification | Secure deletion |\n| Internal AI assistant interaction logs | 13 months | Date of interaction | Automatic deletion |\n| Unsuccessful bid submissions (PRC-POL) | 3 years | Award date | Secure deletion |"
+ },
+ {
+  "chunk_id": "RET-SCH#02",
+  "doc_id": "RET-SCH",
+  "title": "TPRM Records Retention Schedule",
+  "status": "Current",
+  "section": "3. Internal AI Assistant Interaction Logs",
+  "text": "TPRM Records Retention Schedule (RET-SCH, Current)\nSection: 3. Internal AI Assistant Interaction Logs\n\n## 3. Internal AI Assistant Interaction Logs\n\nNorthwind employees use internal AI assistants to search and summarize TPRM policies and vendor files. Logs of these interactions are records under this schedule and are subject to the following rules:\n\n3.1 Raw user prompts and raw assistant responses that contain personal data must not be stored for more than 30 days. The 30-day limit applies to all storage locations, including application logs, observability and tracing platforms, and debugging exports.\n\n3.2 After 30 days, interaction logs may be kept only in summarized or hashed form. Summarized form means a record of the interaction metadata (timestamp, user identifier, documents retrieved, response latency, and evaluation scores) with personal data removed. Hashed form means prompts replaced by a one-way hash sufficient to detect duplicates but not to reconstruct the text.\n\n3.3 Summarized or hashed logs are retained for up to 13 months from the date of interaction and then deleted automatically.\n\n3.4 Logs subject to a legal hold are exempt from 3.1 to 3.3 for the duration of the hold, under the control of Legal.\n\n3.5 System owners must document how their assistant meets 3.1 to 3.3 before production launch. The Records Management Office reviews this documentation annually."
+ },
+ {
+  "chunk_id": "RET-SCH#03",
+  "doc_id": "RET-SCH",
+  "title": "TPRM Records Retention Schedule",
+  "status": "Current",
+  "section": "4. Legal Holds",
+  "text": "TPRM Records Retention Schedule (RET-SCH, Current)\nSection: 4. Legal Holds\n\n## 4. Legal Holds\n\nA legal hold issued by Legal suspends destruction of any affected record, regardless of the periods above. Records under hold are released for disposal only on written notice from Legal."
+ },
+ {
+  "chunk_id": "RET-SCH#04",
+  "doc_id": "RET-SCH",
+  "title": "TPRM Records Retention Schedule",
+  "status": "Current",
+  "section": "5. Format and Location",
+  "text": "TPRM Records Retention Schedule (RET-SCH, Current)\nSection: 5. Format and Location\n\n## 5. Format and Location\n\nRecords are held in the ProcureNet document repository or another system approved by the Records Management Office. Records held in personal drives, email folders, or chat channels do not satisfy this schedule and must be moved to an approved system within 30 days of creation."
+ },
+ {
+  "chunk_id": "RET-SCH#05",
+  "doc_id": "RET-SCH",
+  "title": "TPRM Records Retention Schedule",
+  "status": "Current",
+  "section": "6. Disposal Evidence",
+  "text": "TPRM Records Retention Schedule (RET-SCH, Current)\nSection: 6. Disposal Evidence\n\n## 6. Disposal Evidence\n\nEach quarterly disposal run produces a disposal log listing record types and counts destroyed. Disposal logs are themselves retained for 7 years."
+ },
+ {
+  "chunk_id": "ACC-STD#00",
+  "doc_id": "ACC-STD",
+  "title": "Vendor Access Management Standard",
+  "status": "Current",
+  "section": "1. Purpose",
+  "text": "Vendor Access Management Standard (ACC-STD, Current)\nSection: 1. Purpose\n\n## 1. Purpose\n\nVendor personnel with access to Northwind systems are a common route for attackers. This standard sets the rules for granting, using, reviewing, and removing vendor access."
+ },
+ {
+  "chunk_id": "ACC-STD#01",
+  "doc_id": "ACC-STD",
+  "title": "Vendor Access Management Standard",
+  "status": "Current",
+  "section": "2. Scope",
+  "text": "Vendor Access Management Standard (ACC-STD, Current)\nSection: 2. Scope\n\n## 2. Scope\n\nAll logical access by vendor personnel and vendor systems to Northwind networks, applications, data, and cloud tenants, and all physical access to Northwind premises by vendor personnel."
+ },
+ {
+  "chunk_id": "ACC-STD#02",
+  "doc_id": "ACC-STD",
+  "title": "Vendor Access Management Standard",
+  "status": "Current",
+  "section": "3. Preconditions",
+  "text": "Vendor Access Management Standard (ACC-STD, Current)\nSection: 3. Preconditions\n\n## 3. Preconditions\n\nAccess may be requested only for a vendor that is active under ONB-PRC Step 7, and only by the Vendor Manager or the Business Owner. Access for a vendor with an expired contract is refused."
+ },
+ {
+  "chunk_id": "ACC-STD#03",
+  "doc_id": "ACC-STD",
+  "title": "Vendor Access Management Standard",
+  "status": "Current",
+  "section": "4. Requirements",
+  "text": "Vendor Access Management Standard (ACC-STD, Current)\nSection: 4. Requirements\n\n## 4. Requirements"
+ },
+ {
+  "chunk_id": "ACC-STD#04",
+  "doc_id": "ACC-STD",
+  "title": "Vendor Access Management Standard",
+  "status": "Current",
+  "section": "4. Requirements",
+  "text": "Vendor Access Management Standard (ACC-STD, Current)\nSection: 4. Requirements\n\n1. Every vendor user has a named account tied to one identified individual. Shared, generic, or team accounts are prohibited.\n2. Vendor accounts use the \"v-\" prefix and are created in the dedicated vendor directory, separate from employee accounts.\n3. Multi-factor authentication is required for all vendor access, without exception, including access from vendor premises.\n4. Remote access is permitted only through the Northwind vendor access gateway. Direct VPN connections from vendor networks require CISO office approval.\n5. Access is granted on least privilege, limited to the systems and data named in the access request.\n6. Every vendor account has an expiry date no later than 12 months from creation or the contract end date, whichever is earlier.\n7. Privileged access is granted only through the privileged access management (PAM) system, is time-limited to the approved change window, and is session-recorded.\n8. Session recordings for privileged vendor sessions are retained for 12 months.\n9. Service accounts used by vendor systems are owned by a named Northwind employee, use vaulted credentials, and have credentials rotated at least every 90 days.\n10. API keys issued to vendors are scoped to the minimum required endpoints and rotated at least every 90 days.\n11. Accounts inactive for 30 days are disabled automatically.\n12. Vendor personnel must complete Northwind security awareness training before access is enabled and annually thereafter.\n13. Vendor access to production data from outside the approved regions in CLD-STD \u00a74.1 requires CISO office and Legal approval.\n14. Physical badges for vendor personnel are issued for no more than 90 days at a time and are returned on the last day on site."
+ },
+ {
+  "chunk_id": "ACC-STD#05",
+  "doc_id": "ACC-STD",
+  "title": "Vendor Access Management Standard",
+  "status": "Current",
+  "section": "5. Quarterly Recertification",
+  "text": "Vendor Access Management Standard (ACC-STD, Current)\nSection: 5. Quarterly Recertification\n\n## 5. Quarterly Recertification\n\nThe Vendor Manager recertifies every vendor account quarterly. For each account, the Vendor Manager confirms the individual still works for the vendor, still needs the access, and that the access level remains appropriate. Accounts not recertified within 10 business days of the recertification deadline are disabled. Recertification evidence is retained under RET-SCH."
+ },
+ {
+  "chunk_id": "ACC-STD#06",
+  "doc_id": "ACC-STD",
+  "title": "Vendor Access Management Standard",
+  "status": "Current",
+  "section": "6. Revocation",
+  "text": "Vendor Access Management Standard (ACC-STD, Current)\nSection: 6. Revocation\n\n## 6. Revocation\n\n6.1 The vendor must notify the Vendor Manager within 1 business day when any individual with Northwind access leaves the vendor or moves off the Northwind account. Northwind disables that individual's access within 24 hours of the notice.\n\n6.2 On contract termination, all vendor accounts, tokens, keys, and badges are revoked within 24 hours of the termination effective date (EXIT-PLN \u00a74.1).\n\n6.3 On a security incident involving vendor credentials, the CISO office may suspend all of the vendor's access immediately without notice."
+ },
+ {
+  "chunk_id": "ACC-STD#07",
+  "doc_id": "ACC-STD",
+  "title": "Vendor Access Management Standard",
+  "status": "Current",
+  "section": "7. Monitoring",
+  "text": "Vendor Access Management Standard (ACC-STD, Current)\nSection: 7. Monitoring\n\n## 7. Monitoring\n\nVendor account activity is monitored by the Security Operations Center. Access outside the hours stated in the access request, or from unexpected locations, generates an alert reviewed within 1 business day."
+ },
+ {
+  "chunk_id": "ACC-STD#08",
+  "doc_id": "ACC-STD",
+  "title": "Vendor Access Management Standard",
+  "status": "Current",
+  "section": "8. Exceptions",
+  "text": "Vendor Access Management Standard (ACC-STD, Current)\nSection: 8. Exceptions\n\n## 8. Exceptions\n\nDeviations require an exception under EXC-PRC. Shared accounts are not approved as exceptions unless the system technically cannot support named accounts, and then only with session recording as a compensating control."
+ },
+ {
+  "chunk_id": "BCP-REQ#00",
+  "doc_id": "BCP-REQ",
+  "title": "Vendor Business Continuity and Resilience Requirements",
+  "status": "Current",
+  "section": "Section 1 \u2014 Purpose",
+  "text": "Vendor Business Continuity and Resilience Requirements (BCP-REQ, Current)\nSection: Section 1 \u2014 Purpose\n\n## Section 1 \u2014 Purpose\n\nNorthwind's own recovery commitments to clients and regulators are only as strong as the vendors behind them. This document sets the minimum business continuity and disaster recovery requirements vendors must meet, by tier."
+ },
+ {
+  "chunk_id": "BCP-REQ#01",
+  "doc_id": "BCP-REQ",
+  "title": "Vendor Business Continuity and Resilience Requirements",
+  "status": "Current",
+  "section": "Section 2 \u2014 Recovery Objectives",
+  "text": "Vendor Business Continuity and Resilience Requirements (BCP-REQ, Current)\nSection: Section 2 \u2014 Recovery Objectives\n\n## Section 2 \u2014 Recovery Objectives\n\nThe recovery time objective (RTO) is the maximum time from service disruption to restoration. The recovery point objective (RPO) is the maximum period of data loss measured back from the moment of disruption.\n\n| Tier | RTO | RPO | Plan testing | Test results to Northwind |\n|---|---|---|---|---|\n| Tier 1 | 4 hours | 15 minutes | Annually, full failover test | Within 30 days of the test |\n| Tier 2 | 24 hours | 4 hours | Every 24 months | Within 30 days of the test |\n| Tier 3 | 72 hours | 24 hours | Self-attestation at reassessment | On request |\n| Tier 4 | Best effort | Best effort | Not required | Not required |\n\nWhere a vendor supports a critical business service with a stricter impact tolerance in the Business Impact Register, the stricter value applies and must be written into the contract."
+ },
+ {
+  "chunk_id": "BCP-REQ#02",
+  "doc_id": "BCP-REQ",
+  "title": "Vendor Business Continuity and Resilience Requirements",
+  "status": "Current",
+  "section": "Section 3 \u2014 Plan Content",
+  "text": "Vendor Business Continuity and Resilience Requirements (BCP-REQ, Current)\nSection: Section 3 \u2014 Plan Content\n\n## Section 3 \u2014 Plan Content\n\nTier 1 and Tier 2 vendors must maintain a documented business continuity plan and disaster recovery plan that address, at minimum:\n\n- loss of a primary facility;\n- loss of a primary data center or cloud region;\n- loss of key personnel, including pandemic-level absence of up to 40% of staff;\n- loss of a material subcontractor (FRTH-POL);\n- a cyberattack, including ransomware, that renders production systems unavailable."
+ },
+ {
+  "chunk_id": "BCP-REQ#03",
+  "doc_id": "BCP-REQ",
+  "title": "Vendor Business Continuity and Resilience Requirements",
+  "status": "Current",
+  "section": "Section 4 \u2014 Recovery Sites",
+  "text": "Vendor Business Continuity and Resilience Requirements (BCP-REQ, Current)\nSection: Section 4 \u2014 Recovery Sites\n\n## Section 4 \u2014 Recovery Sites\n\nTier 1 vendors must operate a recovery site, or a cloud region, at least 100 miles from the primary site and not dependent on the same power grid. Cloud-hosted Tier 1 services must also meet the multi-availability-zone requirement in CLD-STD \u00a77.1."
+ },
+ {
+  "chunk_id": "BCP-REQ#04",
+  "doc_id": "BCP-REQ",
+  "title": "Vendor Business Continuity and Resilience Requirements",
+  "status": "Current",
+  "section": "Section 5 \u2014 Testing",
+  "text": "Vendor Business Continuity and Resilience Requirements (BCP-REQ, Current)\nSection: Section 5 \u2014 Testing\n\n## Section 5 \u2014 Testing\n\n5.1 Tier 1 vendors perform a full failover test annually. Tabletop exercises do not satisfy this requirement.\n\n5.2 Test reports must show the RTO and RPO actually achieved, issues found, and remediation dates.\n\n5.3 Northwind may participate in or observe any test. For Tier 1 vendors supporting a critical business service, the Operational Resilience Office joins at least one test every 24 months.\n\n5.4 A test that fails to meet the RTO or RPO is treated as a High finding under DUE-STD \u00a76."
+ },
+ {
+  "chunk_id": "BCP-REQ#05",
+  "doc_id": "BCP-REQ",
+  "title": "Vendor Business Continuity and Resilience Requirements",
+  "status": "Current",
+  "section": "Section 6 \u2014 Real Incidents",
+  "text": "Vendor Business Continuity and Resilience Requirements (BCP-REQ, Current)\nSection: Section 6 \u2014 Real Incidents\n\n## Section 6 \u2014 Real Incidents\n\nService disruptions must be notified under INCN-SLA. A Tier 1 vendor that exceeds its RTO during a real incident triggers a stressed exit assessment under EXIT-PLN \u00a75 and a review by the TPRC."
+ },
+ {
+  "chunk_id": "BCP-REQ#06",
+  "doc_id": "BCP-REQ",
+  "title": "Vendor Business Continuity and Resilience Requirements",
+  "status": "Current",
+  "section": "Section 7 \u2014 Ransomware Resilience",
+  "text": "Vendor Business Continuity and Resilience Requirements (BCP-REQ, Current)\nSection: Section 7 \u2014 Ransomware Resilience\n\n## Section 7 \u2014 Ransomware Resilience\n\nTier 1 and Tier 2 vendors must keep immutable or offline backups of Northwind data, isolated from production credentials, and must test restoration from those backups at least annually."
+ },
+ {
+  "chunk_id": "BCP-REQ#07",
+  "doc_id": "BCP-REQ",
+  "title": "Vendor Business Continuity and Resilience Requirements",
+  "status": "Current",
+  "section": "Section 8 \u2014 Evidence at Reassessment",
+  "text": "Vendor Business Continuity and Resilience Requirements (BCP-REQ, Current)\nSection: Section 8 \u2014 Evidence at Reassessment\n\n## Section 8 \u2014 Evidence at Reassessment\n\nAt each reassessment the vendor provides its current plans, the latest test report, and confirmation that remediation items from the prior test are closed."
+ },
+ {
+  "chunk_id": "EXIT-PLN#00",
+  "doc_id": "EXIT-PLN",
+  "title": "Vendor Exit and Offboarding Standard",
+  "status": "Current",
+  "section": "1. Purpose",
+  "text": "Vendor Exit and Offboarding Standard (EXIT-PLN, Current)\nSection: 1. Purpose\n\n## 1. Purpose\n\nEvery relationship ends. This standard ensures that when one does, whether planned or forced, Northwind gets its data back, removes the vendor's access promptly, and keeps its services running. It implements TPR-POL \u00a74.5."
+ },
+ {
+  "chunk_id": "EXIT-PLN#01",
+  "doc_id": "EXIT-PLN",
+  "title": "Vendor Exit and Offboarding Standard",
+  "status": "Current",
+  "section": "2. Exit Plans",
+  "text": "Vendor Exit and Offboarding Standard (EXIT-PLN, Current)\nSection: 2. Exit Plans\n\n## 2. Exit Plans\n\n2.1 An exit plan is required for every Tier 1 and Tier 2 vendor. It is drafted by the Vendor Manager during onboarding and attached to the contract as a schedule before signature (ONB-PRC Step 5).\n\n2.2 The exit plan must cover two scenarios:\n\n- **Planned exit** \u2014 non-renewal or termination for convenience, with a transition period agreed in the contract.\n- **Stressed exit** \u2014 the vendor fails suddenly through insolvency, a sanctions designation, a severe security incident, or a regulatory order. The plan must state how the service is maintained with no transition assistance from the vendor.\n\n2.3 Each plan names the replacement option (alternate vendor, in-house capability, or orderly service discontinuation), the data to be returned and its format, the estimated transition time, and the cost estimate.\n\n2.4 Tier 1 exit plans are tested by tabletop exercise every 24 months and reviewed at each annual reassessment. Tier 2 exit plans are reviewed at each reassessment."
+ },
+ {
+  "chunk_id": "EXIT-PLN#02",
+  "doc_id": "EXIT-PLN",
+  "title": "Vendor Exit and Offboarding Standard",
+  "status": "Current",
+  "section": "3. Contract Requirements",
+  "text": "Vendor Exit and Offboarding Standard (EXIT-PLN, Current)\nSection: 3. Contract Requirements\n\n## 3. Contract Requirements\n\nTier 1 and Tier 2 contracts must require the vendor to:\n\n- provide transition assistance for at least 6 months after notice of termination, at the rates in force;\n- return Northwind data in an agreed, non-proprietary, machine-readable format;\n- securely destroy all remaining copies after return, including backups, and certify destruction;\n- continue to meet INCN-SLA and BCP-REQ obligations during the transition period."
+ },
+ {
+  "chunk_id": "EXIT-PLN#03",
+  "doc_id": "EXIT-PLN",
+  "title": "Vendor Exit and Offboarding Standard",
+  "status": "Current",
+  "section": "4. Offboarding Steps",
+  "text": "Vendor Exit and Offboarding Standard (EXIT-PLN, Current)\nSection: 4. Offboarding Steps\n\n## 4. Offboarding Steps\n\nOnce a termination or non-renewal date is set, the Vendor Manager opens an offboarding case in ProcureNet and completes the following."
+ },
+ {
+  "chunk_id": "EXIT-PLN#04",
+  "doc_id": "EXIT-PLN",
+  "title": "Vendor Exit and Offboarding Standard",
+  "status": "Current",
+  "section": "4.1 Access Revocation",
+  "text": "Vendor Exit and Offboarding Standard (EXIT-PLN, Current)\nSection: 4.1 Access Revocation\n\n### 4.1 Access Revocation\n\nAll vendor accounts, VPN tokens, API keys, and physical badges are revoked within 24 hours of the termination effective date. Revocation follows ACC-STD \u00a76. Shared secrets known to the vendor are rotated within the same 24 hours."
+ },
+ {
+  "chunk_id": "EXIT-PLN#05",
+  "doc_id": "EXIT-PLN",
+  "title": "Vendor Exit and Offboarding Standard",
+  "status": "Current",
+  "section": "4.2 Data Return and Destruction",
+  "text": "Vendor Exit and Offboarding Standard (EXIT-PLN, Current)\nSection: 4.2 Data Return and Destruction\n\n### 4.2 Data Return and Destruction\n\nThe vendor must return Northwind data and deliver a signed certificate of data destruction within 30 days of the termination effective date. The certificate must identify the data sets, the destruction method, the date, and the vendor officer signing. Where the vendor used subcontractors, the certificate must cover subcontractor copies too (FRTH-POL). The TPRM Office escalates any certificate not received within 30 days to Legal."
+ },
+ {
+  "chunk_id": "EXIT-PLN#06",
+  "doc_id": "EXIT-PLN",
+  "title": "Vendor Exit and Offboarding Standard",
+  "status": "Current",
+  "section": "4.3 Financial Close",
+  "text": "Vendor Exit and Offboarding Standard (EXIT-PLN, Current)\nSection: 4.3 Financial Close\n\n### 4.3 Financial Close\n\nAccounts Payable settles the final invoice only after the destruction certificate is received for Tier 1 and Tier 2 vendors. Procurement deactivates the vendor master record after final payment."
+ },
+ {
+  "chunk_id": "EXIT-PLN#07",
+  "doc_id": "EXIT-PLN",
+  "title": "Vendor Exit and Offboarding Standard",
+  "status": "Current",
+  "section": "4.4 Records",
+  "text": "Vendor Exit and Offboarding Standard (EXIT-PLN, Current)\nSection: 4.4 Records\n\n### 4.4 Records\n\nThe exit file, including the destruction certificate, is retained under RET-SCH."
+ },
+ {
+  "chunk_id": "EXIT-PLN#08",
+  "doc_id": "EXIT-PLN",
+  "title": "Vendor Exit and Offboarding Standard",
+  "status": "Current",
+  "section": "5. Stressed Exit Triggers",
+  "text": "Vendor Exit and Offboarding Standard (EXIT-PLN, Current)\nSection: 5. Stressed Exit Triggers\n\n## 5. Stressed Exit Triggers\n\nThe TPRM Office must assess whether to invoke the stressed exit plan when any of these occur: a confirmed sanctions match (SANC-PRC), a financial watch-list rating of Red (FIN-STD), a breach of a Tier 1 RTO during a real incident (BCP-REQ), or a regulator instruction. The decision is made by the Business Owner and the Head of Third-Party Risk Management within 5 business days and reported to the TPRC."
+ },
+ {
+  "chunk_id": "FIN-STD#00",
+  "doc_id": "FIN-STD",
+  "title": "Vendor Financial Health Review Standard",
+  "status": "Current",
+  "section": "1. Purpose",
+  "text": "Vendor Financial Health Review Standard (FIN-STD, Current)\nSection: 1. Purpose\n\n## 1. Purpose\n\nA vendor that cannot pay its own bills cannot reliably deliver services to Northwind. This standard defines when and how vendor financial health is reviewed and what Northwind does when a vendor's position deteriorates."
+ },
+ {
+  "chunk_id": "FIN-STD#01",
+  "doc_id": "FIN-STD",
+  "title": "Vendor Financial Health Review Standard",
+  "status": "Current",
+  "section": "2. Scope and Frequency",
+  "text": "Vendor Financial Health Review Standard (FIN-STD, Current)\nSection: 2. Scope and Frequency\n\n## 2. Scope and Frequency\n\nFinancial review is required for Tier 1 and Tier 2 vendors:\n\n- at onboarding, as part of due diligence (DUE-STD \u00a74.4);\n- annually for Tier 1 vendors;\n- every 24 months for Tier 2 vendors;\n- whenever a trigger event in Section 5 occurs.\n\nTier 3 and Tier 4 vendors are not reviewed unless the TPRM Office requests it."
+ },
+ {
+  "chunk_id": "FIN-STD#02",
+  "doc_id": "FIN-STD",
+  "title": "Vendor Financial Health Review Standard",
+  "status": "Current",
+  "section": "3. Evidence",
+  "text": "Vendor Financial Health Review Standard (FIN-STD, Current)\nSection: 3. Evidence\n\n## 3. Evidence\n\n3.1 Public companies: the last two annual reports and the most recent quarterly filing.\n\n3.2 Private companies: audited financial statements for the last two fiscal years.\n\n3.3 Where a private vendor cannot provide audited statements, Treasury Risk may accept, in order of preference: reviewed statements signed by an independent accountant; a third-party credit report; or management accounts with a signed officer certification. Management accounts alone are not sufficient for a Tier 1 vendor."
+ },
+ {
+  "chunk_id": "FIN-STD#03",
+  "doc_id": "FIN-STD",
+  "title": "Vendor Financial Health Review Standard",
+  "status": "Current",
+  "section": "4. Assessment",
+  "text": "Vendor Financial Health Review Standard (FIN-STD, Current)\nSection: 4. Assessment\n\n## 4. Assessment\n\nTreasury Risk assigns a rating of Green, Amber, or Red. The following indicators each move the rating toward Amber, and two or more toward Red:\n\n- current ratio below 1.0;\n- negative operating cash flow in each of the last two fiscal years;\n- revenue decline of more than 20% year on year;\n- an external credit rating below BB-, or an equivalent third-party risk score in the bottom quartile;\n- a going-concern qualification in the auditor's opinion (this alone produces Red);\n- Northwind spend greater than 25% of the vendor's annual revenue, indicating the vendor depends on Northwind."
+ },
+ {
+  "chunk_id": "FIN-STD#04",
+  "doc_id": "FIN-STD",
+  "title": "Vendor Financial Health Review Standard",
+  "status": "Current",
+  "section": "5. Trigger Events",
+  "text": "Vendor Financial Health Review Standard (FIN-STD, Current)\nSection: 5. Trigger Events\n\n## 5. Trigger Events\n\nThe following require a review within 15 business days of Northwind becoming aware: a change of control; a credit rating downgrade of two or more notches; a missed debt payment or covenant breach; announced layoffs of more than 15% of staff; loss of a major client publicly reported; or a going-concern warning. Vendors must notify these events under INCN-SLA."
+ },
+ {
+  "chunk_id": "FIN-STD#05",
+  "doc_id": "FIN-STD",
+  "title": "Vendor Financial Health Review Standard",
+  "status": "Current",
+  "section": "6. Watch List",
+  "text": "Vendor Financial Health Review Standard (FIN-STD, Current)\nSection: 6. Watch List\n\n## 6. Watch List\n\n6.1 Vendors rated Amber or Red are placed on the financial watch list. Treasury Risk reviews the watch list quarterly and reports it to the TPRC.\n\n6.2 For an Amber rating, the Vendor Manager confirms the exit plan (EXIT-PLN) is current and increases monitoring of service performance.\n\n6.3 For a Red rating, the TPRM Office assesses invoking the stressed exit plan under EXIT-PLN \u00a75, and the Business Owner must not commit to any new spend or contract extension until the TPRC has reviewed the vendor."
+ },
+ {
+  "chunk_id": "FIN-STD#06",
+  "doc_id": "FIN-STD",
+  "title": "Vendor Financial Health Review Standard",
+  "status": "Current",
+  "section": "7. Prepayments",
+  "text": "Vendor Financial Health Review Standard (FIN-STD, Current)\nSection: 7. Prepayments\n\n## 7. Prepayments\n\nPrepayments of more than 3 months' fees to any vendor on the watch list are prohibited. For other Tier 1 and Tier 2 vendors, prepayments of more than 6 months' fees require Treasury Risk approval."
+ },
+ {
+  "chunk_id": "FIN-STD#07",
+  "doc_id": "FIN-STD",
+  "title": "Vendor Financial Health Review Standard",
+  "status": "Current",
+  "section": "8. Records",
+  "text": "Vendor Financial Health Review Standard (FIN-STD, Current)\nSection: 8. Records\n\n## 8. Records\n\nFinancial review files form part of the due diligence file and are retained under RET-SCH."
+ },
+ {
+  "chunk_id": "GIFT-POL#00",
+  "doc_id": "GIFT-POL",
+  "title": "Gifts, Entertainment and Vendor Conflicts of Interest Policy",
+  "status": "Current",
+  "section": "Purpose",
+  "text": "Gifts, Entertainment and Vendor Conflicts of Interest Policy (GIFT-POL, Current)\nSection: Purpose\n\n**Purpose.** Vendor decisions at Northwind must be made on merit. Gifts, hospitality, and personal relationships can influence those decisions, or appear to. This policy sets the limits for employees who select, manage, or approve payments to vendors, and for any employee who receives gifts or entertainment from a current or prospective vendor."
+ },
+ {
+  "chunk_id": "GIFT-POL#01",
+  "doc_id": "GIFT-POL",
+  "title": "Gifts, Entertainment and Vendor Conflicts of Interest Policy",
+  "status": "Current",
+  "section": "Scope",
+  "text": "Gifts, Entertainment and Vendor Conflicts of Interest Policy (GIFT-POL, Current)\nSection: Scope\n\n**Scope.** All Northwind employees and contractors. The policy covers gifts and entertainment offered by any current vendor, any prospective vendor, and any vendor's agent or subcontractor."
+ },
+ {
+  "chunk_id": "GIFT-POL#02",
+  "doc_id": "GIFT-POL",
+  "title": "Gifts, Entertainment and Vendor Conflicts of Interest Policy",
+  "status": "Current",
+  "section": "Gifts",
+  "text": "Gifts, Entertainment and Vendor Conflicts of Interest Policy (GIFT-POL, Current)\nSection: Gifts\n\n**Gifts.** An employee may accept a gift from a vendor only if its value is $100 or less. The aggregate value of gifts accepted from any one vendor may not exceed $250 per calendar year per employee. Gifts above these limits must be politely declined or, if refusal would cause offense, surrendered to Compliance within 5 business days. Cash and cash equivalents, including gift cards, prepaid cards, vouchers, and securities, are prohibited at any value."
+ },
+ {
+  "chunk_id": "GIFT-POL#03",
+  "doc_id": "GIFT-POL",
+  "title": "Gifts, Entertainment and Vendor Conflicts of Interest Policy",
+  "status": "Current",
+  "section": "Entertainment",
+  "text": "Gifts, Entertainment and Vendor Conflicts of Interest Policy (GIFT-POL, Current)\nSection: Entertainment\n\n**Entertainment.** Business meals and events attended together with the vendor are entertainment, not gifts. Entertainment of up to $250 per person per event may be accepted without pre-approval if it has a clear business purpose and is not lavish or frequent. Entertainment above $250 per person requires pre-approval from the employee's manager and Compliance. Entertainment where the vendor does not attend is treated as a gift. Travel and accommodation paid by a vendor are prohibited unless pre-approved by Compliance."
+ },
+ {
+  "chunk_id": "GIFT-POL#04",
+  "doc_id": "GIFT-POL",
+  "title": "Gifts, Entertainment and Vendor Conflicts of Interest Policy",
+  "status": "Current",
+  "section": "Blackout during sourcing",
+  "text": "Gifts, Entertainment and Vendor Conflicts of Interest Policy (GIFT-POL, Current)\nSection: Blackout during sourcing\n\n**Blackout during sourcing.** Employees involved in an active RFP or sole-source evaluation (PRC-POL) may not accept any gift or entertainment, of any value, from any bidder until the contract is awarded. The blackout also applies during contract renewal negotiations (RNW-PRC)."
+ },
+ {
+  "chunk_id": "GIFT-POL#05",
+  "doc_id": "GIFT-POL",
+  "title": "Gifts, Entertainment and Vendor Conflicts of Interest Policy",
+  "status": "Current",
+  "section": "Register",
+  "text": "Gifts, Entertainment and Vendor Conflicts of Interest Policy (GIFT-POL, Current)\nSection: Register\n\n**Register.** Every gift or entertainment offered by a vendor and valued above $50, whether accepted or declined, must be recorded in the Gifts and Entertainment Register within 5 business days. Register entries are retained under RET-SCH."
+ },
+ {
+  "chunk_id": "GIFT-POL#06",
+  "doc_id": "GIFT-POL",
+  "title": "Gifts, Entertainment and Vendor Conflicts of Interest Policy",
+  "status": "Current",
+  "section": "Giving to vendors",
+  "text": "Gifts, Entertainment and Vendor Conflicts of Interest Policy (GIFT-POL, Current)\nSection: Giving to vendors\n\n**Giving to vendors.** Gifts and entertainment given by Northwind employees to vendor personnel follow the same value limits and must be recorded in the register."
+ },
+ {
+  "chunk_id": "GIFT-POL#07",
+  "doc_id": "GIFT-POL",
+  "title": "Gifts, Entertainment and Vendor Conflicts of Interest Policy",
+  "status": "Current",
+  "section": "Conflicts of interest",
+  "text": "Gifts, Entertainment and Vendor Conflicts of Interest Policy (GIFT-POL, Current)\nSection: Conflicts of interest\n\n**Conflicts of interest.** A conflict exists where an employee, or a close family member or household member, has a financial interest in a vendor, is employed by a vendor, or has a close personal relationship with a vendor's owner or account team. Employees must disclose a conflict to Compliance as soon as they become aware of it and before taking part in any decision involving that vendor."
+ },
+ {
+  "chunk_id": "GIFT-POL#08",
+  "doc_id": "GIFT-POL",
+  "title": "Gifts, Entertainment and Vendor Conflicts of Interest Policy",
+  "status": "Current",
+  "section": "Recusal",
+  "text": "Gifts, Entertainment and Vendor Conflicts of Interest Policy (GIFT-POL, Current)\nSection: Recusal\n\n**Recusal.** An employee with a disclosed conflict must recuse from vendor selection, evaluation, contract negotiation, performance rating, invoice approval, and exception approval for that vendor. RFP evaluators sign a conflict declaration before reviewing bids (PRC-POL \u00a77.2)."
+ },
+ {
+  "chunk_id": "GIFT-POL#09",
+  "doc_id": "GIFT-POL",
+  "title": "Gifts, Entertainment and Vendor Conflicts of Interest Policy",
+  "status": "Current",
+  "section": "Annual attestation",
+  "text": "Gifts, Entertainment and Vendor Conflicts of Interest Policy (GIFT-POL, Current)\nSection: Annual attestation\n\n**Annual attestation.** All employees with vendor-facing responsibilities, including every Vendor Manager and Business Owner, complete an annual conflicts-of-interest attestation by January 31 each year."
+ },
+ {
+  "chunk_id": "GIFT-POL#10",
+  "doc_id": "GIFT-POL",
+  "title": "Gifts, Entertainment and Vendor Conflicts of Interest Policy",
+  "status": "Current",
+  "section": "Former employees",
+  "text": "Gifts, Entertainment and Vendor Conflicts of Interest Policy (GIFT-POL, Current)\nSection: Former employees\n\n**Former employees.** A Northwind employee who leaves to join a vendor may not represent that vendor to Northwind for 12 months on any matter they handled while employed at Northwind."
+ },
+ {
+  "chunk_id": "GIFT-POL#11",
+  "doc_id": "GIFT-POL",
+  "title": "Gifts, Entertainment and Vendor Conflicts of Interest Policy",
+  "status": "Current",
+  "section": "Breaches",
+  "text": "Gifts, Entertainment and Vendor Conflicts of Interest Policy (GIFT-POL, Current)\nSection: Breaches\n\n**Breaches.** Failure to disclose a conflict or to record a gift is a disciplinary matter. Where a breach affected a sourcing decision, Compliance may require the sourcing to be re-run."
+ },
+ {
+  "chunk_id": "INCN-SLA#00",
+  "doc_id": "INCN-SLA",
+  "title": "Vendor Incident Notification SLA Schedule",
+  "status": "Current",
+  "section": "1. Purpose and Use",
+  "text": "Vendor Incident Notification SLA Schedule (INCN-SLA, Current)\nSection: 1. Purpose and Use\n\n## 1. Purpose and Use\n\nThis schedule sets the maximum time a vendor has to notify Northwind of an incident. It is incorporated by reference into every vendor contract and every DPA (DPA-REQ clause 6). Legal must not agree longer deadlines without an approved exception under EXC-PRC. Shorter deadlines are always acceptable.\n\nThe clock starts when the vendor, or any of its subcontractors (FRTH-POL \u00a77), becomes aware of the incident, not when its investigation concludes."
+ },
+ {
+  "chunk_id": "INCN-SLA#01",
+  "doc_id": "INCN-SLA",
+  "title": "Vendor Incident Notification SLA Schedule",
+  "status": "Current",
+  "section": "2. Notification Deadlines",
+  "text": "Vendor Incident Notification SLA Schedule (INCN-SLA, Current)\nSection: 2. Notification Deadlines\n\n## 2. Notification Deadlines\n\n| Incident type | Tier 1 | Tier 2 | Tier 3 | Tier 4 |\n|---|---|---|---|---|\n| Outage of a service supporting a critical business service | 1 hour | 4 hours | Next business day | Not applicable |\n| Ransomware or destructive malware on systems that store or process Northwind data | 4 hours | 8 hours | 24 hours | 48 hours |\n| Confirmed personal-data breach involving Northwind data | 24 hours | 48 hours | 72 hours | 72 hours |\n| Unauthorized access to Northwind data, not yet confirmed as a breach | 24 hours | 48 hours | 72 hours | 72 hours |\n| Incident at a material subcontractor affecting Northwind data or services | 24 hours | 48 hours | 72 hours | Not applicable |\n| Harmful or materially incorrect output from an AI service used by Northwind (AIV-STD) | 72 hours | 72 hours | 72 hours | 72 hours |\n| Regulatory inquiry or enforcement action concerning the contracted services | 5 business days | 5 business days | 10 business days | Not applicable |\n| Change of control, or financial distress event (FIN-STD \u00a75) | 10 business days | 10 business days | 30 days | Not applicable |\n\n\"Hours\" are clock hours, including weekends and public holidays."
+ },
+ {
+  "chunk_id": "INCN-SLA#02",
+  "doc_id": "INCN-SLA",
+  "title": "Vendor Incident Notification SLA Schedule",
+  "status": "Current",
+  "section": "3. Notification Content",
+  "text": "Vendor Incident Notification SLA Schedule (INCN-SLA, Current)\nSection: 3. Notification Content\n\n## 3. Notification Content\n\nThe initial notification must include, to the extent known: a description of the incident; the time it occurred and the time it was discovered; the Northwind data and services affected; the containment actions taken; and a named vendor contact available around the clock. Missing information must not delay the initial notification."
+ },
+ {
+  "chunk_id": "INCN-SLA#03",
+  "doc_id": "INCN-SLA",
+  "title": "Vendor Incident Notification SLA Schedule",
+  "status": "Current",
+  "section": "4. Follow-Up Reporting",
+  "text": "Vendor Incident Notification SLA Schedule (INCN-SLA, Current)\nSection: 4. Follow-Up Reporting\n\n## 4. Follow-Up Reporting\n\n| Report | Deadline |\n|---|---|\n| Status updates during an active Tier 1 incident | Every 4 hours, or as agreed with the CISO office |\n| Status updates during an active Tier 2 incident | Every 24 hours |\n| Written root-cause analysis | 10 business days after containment |\n| Remediation plan for root-cause findings | 20 business days after containment |"
+ },
+ {
+  "chunk_id": "INCN-SLA#04",
+  "doc_id": "INCN-SLA",
+  "title": "Vendor Incident Notification SLA Schedule",
+  "status": "Current",
+  "section": "5. Notification Channels",
+  "text": "Vendor Incident Notification SLA Schedule (INCN-SLA, Current)\nSection: 5. Notification Channels\n\n## 5. Notification Channels\n\nVendors notify through both channels:\n\n- the vendor incident mailbox, vendor-incidents@northwindcg.example, and\n- the TPRM Office incident hotline, staffed around the clock.\n\nFor Tier 1 outages, the vendor must also call the named Northwind service owner. Notification to a Vendor Manager's personal mailbox alone does not satisfy this schedule."
+ },
+ {
+  "chunk_id": "INCN-SLA#05",
+  "doc_id": "INCN-SLA",
+  "title": "Vendor Incident Notification SLA Schedule",
+  "status": "Current",
+  "section": "6. Northwind Actions on Receipt",
+  "text": "Vendor Incident Notification SLA Schedule (INCN-SLA, Current)\nSection: 6. Northwind Actions on Receipt\n\n## 6. Northwind Actions on Receipt\n\nThe CISO office opens a third-party incident record within 1 hour of receiving a Tier 1 or Tier 2 notification. Where personal data is involved, the Privacy Office is engaged immediately to assess Northwind's own regulatory notification obligations. Missed vendor deadlines are recorded on the vendor's performance scorecard (PERF-STD) and considered at renewal (RNW-PRC Section 3)."
+ },
+ {
+  "chunk_id": "INCN-SLA#06",
+  "doc_id": "INCN-SLA",
+  "title": "Vendor Incident Notification SLA Schedule",
+  "status": "Current",
+  "section": "7. Records",
+  "text": "Vendor Incident Notification SLA Schedule (INCN-SLA, Current)\nSection: 7. Records\n\n## 7. Records\n\nIncident records are retained under RET-SCH."
+ },
+ {
+  "chunk_id": "ONB-PRC#00",
+  "doc_id": "ONB-PRC",
+  "title": "Vendor Onboarding Procedure",
+  "status": "Current",
+  "section": "Overview",
+  "text": "Vendor Onboarding Procedure (ONB-PRC, Current)\nSection: Overview\n\n## Overview\n\nThis procedure takes a vendor from approved sourcing decision to an active record in the vendor master. It applies after Procurement has completed sourcing under PRC-POL. No vendor may receive Northwind data, system access, or payment until Step 7 is complete (TPR-POL \u00a74.3)."
+ },
+ {
+  "chunk_id": "ONB-PRC#01",
+  "doc_id": "ONB-PRC",
+  "title": "Vendor Onboarding Procedure",
+  "status": "Current",
+  "section": "Step 1: Intake",
+  "text": "Vendor Onboarding Procedure (ONB-PRC, Current)\nSection: Step 1: Intake\n\n## Step 1: Intake\n\nThe Business Owner submits a Vendor Intake Request in ProcureNet. The request must state the business need, estimated annual spend, the data classifications the vendor will access, the business service supported, and whether the vendor will use subcontractors. Incomplete requests are returned within 2 business days."
+ },
+ {
+  "chunk_id": "ONB-PRC#02",
+  "doc_id": "ONB-PRC",
+  "title": "Vendor Onboarding Procedure",
+  "status": "Current",
+  "section": "Step 2: Tiering",
+  "text": "Vendor Onboarding Procedure (ONB-PRC, Current)\nSection: Step 2: Tiering\n\n## Step 2: Tiering\n\nThe TPRM Office assigns a preliminary tier under TIER-MTX within 5 business days of a complete intake request. The tier and the list of required assessments are posted to the ProcureNet record."
+ },
+ {
+  "chunk_id": "ONB-PRC#03",
+  "doc_id": "ONB-PRC",
+  "title": "Vendor Onboarding Procedure",
+  "status": "Current",
+  "section": "Step 3: Screening",
+  "text": "Vendor Onboarding Procedure (ONB-PRC, Current)\nSection: Step 3: Screening\n\n## Step 3: Screening\n\nProcurement initiates sanctions and adverse media screening under SANC-PRC. Screening must return clear, or any potential match must be adjudicated, before diligence evidence is requested from the vendor. This prevents Northwind from sharing its questionnaires with a sanctioned party."
+ },
+ {
+  "chunk_id": "ONB-PRC#04",
+  "doc_id": "ONB-PRC",
+  "title": "Vendor Onboarding Procedure",
+  "status": "Current",
+  "section": "Step 4: Due Diligence",
+  "text": "Vendor Onboarding Procedure (ONB-PRC, Current)\nSection: Step 4: Due Diligence\n\n## Step 4: Due Diligence\n\nThe TPRM Office coordinates the assessments required by DUE-STD. The vendor receives a single consolidated evidence request. Vendors have 15 business days to return evidence; one extension of 10 business days may be granted by the TPRM Office."
+ },
+ {
+  "chunk_id": "ONB-PRC#05",
+  "doc_id": "ONB-PRC",
+  "title": "Vendor Onboarding Procedure",
+  "status": "Current",
+  "section": "Step 5: Contracting",
+  "text": "Vendor Onboarding Procedure (ONB-PRC, Current)\nSection: Step 5: Contracting\n\n## Step 5: Contracting\n\nLegal negotiates the contract using the clause library for the vendor's tier. Where personal data is involved, a DPA meeting DPA-REQ must be executed with or before the main agreement. Tier 1 and Tier 2 contracts must include an exit plan schedule (EXIT-PLN) and a right-to-audit clause (AUDT-GDE)."
+ },
+ {
+  "chunk_id": "ONB-PRC#06",
+  "doc_id": "ONB-PRC",
+  "title": "Vendor Onboarding Procedure",
+  "status": "Current",
+  "section": "Step 6: Banking and Tax Verification",
+  "text": "Vendor Onboarding Procedure (ONB-PRC, Current)\nSection: Step 6: Banking and Tax Verification\n\n## Step 6: Banking and Tax Verification\n\nAccounts Payable verifies the vendor's tax identification and bank details. Bank details must be confirmed by a callback to a telephone number obtained independently of the vendor's submission, never a number on the submitted form. Any later change to bank details requires the same callback before the change is applied."
+ },
+ {
+  "chunk_id": "ONB-PRC#07",
+  "doc_id": "ONB-PRC",
+  "title": "Vendor Onboarding Procedure",
+  "status": "Current",
+  "section": "Step 7: Activation",
+  "text": "Vendor Onboarding Procedure (ONB-PRC, Current)\nSection: Step 7: Activation\n\n## Step 7: Activation\n\nProcurement creates the vendor master record only after the TPRM Office records final approval in ProcureNet. The Vendor Manager is named on the record at activation. Access requests for vendor personnel may then be raised under ACC-STD."
+ },
+ {
+  "chunk_id": "ONB-PRC#08",
+  "doc_id": "ONB-PRC",
+  "title": "Vendor Onboarding Procedure",
+  "status": "Current",
+  "section": "Cycle-Time Targets",
+  "text": "Vendor Onboarding Procedure (ONB-PRC, Current)\nSection: Cycle-Time Targets\n\n## Cycle-Time Targets\n\n| Tier | Target from complete intake to activation |\n|---|---|\n| Tier 1 | 45 business days |\n| Tier 2 | 30 business days |\n| Tier 3 | 15 business days |\n| Tier 4 | 5 business days |\n\nTargets exclude time the vendor spends returning evidence beyond the 15-business-day window."
+ },
+ {
+  "chunk_id": "ONB-PRC#09",
+  "doc_id": "ONB-PRC",
+  "title": "Vendor Onboarding Procedure",
+  "status": "Current",
+  "section": "Common Errors",
+  "text": "Vendor Onboarding Procedure (ONB-PRC, Current)\nSection: Common Errors\n\n## Common Errors\n\n- Raising a purchase order before activation. ProcureNet blocks this, and manual workarounds are a policy breach.\n- Sharing Confidential data during a pilot before onboarding. Pilots are onboarding; tier them the same way.\n- Treating a renewal as a new vendor. Renewals follow RNW-PRC."
+ },
+ {
+  "chunk_id": "PERF-STD#00",
+  "doc_id": "PERF-STD",
+  "title": "Vendor Performance Monitoring Standard",
+  "status": "Current",
+  "section": "Section 1 \u2014 Purpose",
+  "text": "Vendor Performance Monitoring Standard (PERF-STD, Current)\nSection: Section 1 \u2014 Purpose\n\n## Section 1 \u2014 Purpose\n\nDue diligence tells us whether a vendor can deliver. Performance monitoring tells us whether it does. This standard sets how Vendor Managers track service levels, run business reviews, and act when performance slips."
+ },
+ {
+  "chunk_id": "PERF-STD#01",
+  "doc_id": "PERF-STD",
+  "title": "Vendor Performance Monitoring Standard",
+  "status": "Current",
+  "section": "Section 2 \u2014 Review Cadence",
+  "text": "Vendor Performance Monitoring Standard (PERF-STD, Current)\nSection: Section 2 \u2014 Review Cadence\n\n## Section 2 \u2014 Review Cadence\n\n| Tier | Business review | Scorecard |\n|---|---|---|\n| Tier 1 | Quarterly business review (QBR) | Quarterly |\n| Tier 2 | Semi-annual review | Semi-annual |\n| Tier 3 | Annual review | Annual |\n| Tier 4 | Not required | Not required |\n\nQBRs are attended by the Vendor Manager, the Business Owner or delegate, and a vendor executive sponsor. Minutes and actions are recorded in ProcureNet within 5 business days of the meeting."
+ },
+ {
+  "chunk_id": "PERF-STD#02",
+  "doc_id": "PERF-STD",
+  "title": "Vendor Performance Monitoring Standard",
+  "status": "Current",
+  "section": "Section 3 \u2014 Scorecards",
+  "text": "Vendor Performance Monitoring Standard (PERF-STD, Current)\nSection: Section 3 \u2014 Scorecards\n\n## Section 3 \u2014 Scorecards\n\n3.1 Each scorecard rates the vendor Green, Amber, or Red on five dimensions:\n\n- service levels: performance against the contractual SLAs;\n- incident management: incidents notified and whether INCN-SLA deadlines were met;\n- risk and compliance: status of open DUE-STD findings, exceptions, and overdue evidence;\n- relationship: responsiveness, account management, and escalation handling;\n- commercial: invoicing accuracy and adherence to agreed pricing.\n\n3.2 The overall rating is the lowest rating among service levels, incident management, and risk and compliance. Relationship and commercial ratings are reported but do not set the overall rating.\n\n3.3 A missed INCN-SLA notification deadline automatically sets incident management to Red for that period."
+ },
+ {
+  "chunk_id": "PERF-STD#03",
+  "doc_id": "PERF-STD",
+  "title": "Vendor Performance Monitoring Standard",
+  "status": "Current",
+  "section": "Section 4 \u2014 KPIs",
+  "text": "Vendor Performance Monitoring Standard (PERF-STD, Current)\nSection: Section 4 \u2014 KPIs\n\n## Section 4 \u2014 KPIs\n\nContracts for Tier 1 and Tier 2 vendors must define measurable KPIs with target and threshold values. At minimum: service availability, incident response time, defect or error rate, and, for operations outsourcing, processing accuracy. KPIs are reported by the vendor monthly, with supporting data Northwind can verify."
+ },
+ {
+  "chunk_id": "PERF-STD#04",
+  "doc_id": "PERF-STD",
+  "title": "Vendor Performance Monitoring Standard",
+  "status": "Current",
+  "section": "Section 5 \u2014 Underperformance",
+  "text": "Vendor Performance Monitoring Standard (PERF-STD, Current)\nSection: Section 5 \u2014 Underperformance\n\n## Section 5 \u2014 Underperformance\n\n5.1 Any SLA breach is logged in ProcureNet with the service credit, if any, claimed.\n\n5.2 A Red overall rating, or an SLA breach in two consecutive quarters, requires a performance improvement plan (PIP). The PIP sets specific actions, owners, and a remediation period of no more than 90 days.\n\n5.3 If the PIP fails, the Vendor Manager escalates to the Business Owner and the TPRM Office, who decide whether to invoke contractual remedies or the exit plan (EXIT-PLN).\n\n5.4 Service credits must be claimed. Waiving a service credit requires Business Owner approval recorded in ProcureNet."
+ },
+ {
+  "chunk_id": "PERF-STD#05",
+  "doc_id": "PERF-STD",
+  "title": "Vendor Performance Monitoring Standard",
+  "status": "Current",
+  "section": "Section 6 \u2014 Inputs to Other Processes",
+  "text": "Vendor Performance Monitoring Standard (PERF-STD, Current)\nSection: Section 6 \u2014 Inputs to Other Processes\n\n## Section 6 \u2014 Inputs to Other Processes\n\nThe last four scorecards feed the renewal risk review (RNW-PRC Section 3). Red ratings for Tier 1 vendors are reported to the TPRC monthly. Scorecards and QBR minutes are retained under RET-SCH."
+ },
+ {
+  "chunk_id": "PERF-STD#06",
+  "doc_id": "PERF-STD",
+  "title": "Vendor Performance Monitoring Standard",
+  "status": "Current",
+  "section": "Section 7 \u2014 Vendor Manager Responsibilities",
+  "text": "Vendor Performance Monitoring Standard (PERF-STD, Current)\nSection: Section 7 \u2014 Vendor Manager Responsibilities\n\n## Section 7 \u2014 Vendor Manager Responsibilities\n\nThe Vendor Manager owns the scorecard and may not delegate the rating to the vendor. Vendor-supplied data is an input, not the rating. Where the Vendor Manager changes, the outgoing manager hands over open PIPs, overdue evidence, and the current scorecard before leaving the role."
+ },
+ {
+  "chunk_id": "TIER-MTX#00",
+  "doc_id": "TIER-MTX",
+  "title": "Vendor Risk Tiering Matrix",
+  "status": "Current",
+  "section": "Section 1 \u2014 Purpose",
+  "text": "Vendor Risk Tiering Matrix (TIER-MTX, Current)\nSection: Section 1 \u2014 Purpose\n\n## Section 1 \u2014 Purpose\n\nThe tier drives everything downstream: diligence depth, contract clauses, reassessment frequency, incident deadlines, and continuity targets. The TPRM Office assigns the tier at intake (TPR-POL \u00a74.1) and confirms it after due diligence. A vendor takes the highest tier triggered by any single criterion."
+ },
+ {
+  "chunk_id": "TIER-MTX#01",
+  "doc_id": "TIER-MTX",
+  "title": "Vendor Risk Tiering Matrix",
+  "status": "Current",
+  "section": "Section 2 \u2014 Tier Criteria",
+  "text": "Vendor Risk Tiering Matrix (TIER-MTX, Current)\nSection: Section 2 \u2014 Tier Criteria\n\n## Section 2 \u2014 Tier Criteria\n\n| Criterion | Tier 1 (Critical) | Tier 2 (High) | Tier 3 (Moderate) | Tier 4 (Low) |\n|---|---|---|---|---|\n| Data access | Restricted data, or personal data on more than 100,000 individuals | Confidential data, or personal data on 100,000 individuals or fewer | Internal data only | No Northwind data |\n| Service criticality | Supports a critical business service | Supports an important business service | Supports a non-critical internal function | Commodity goods or services |\n| Annual spend | More than $1,000,000 | $250,000 to $1,000,000 | $50,000 to $249,999 | Under $50,000 |\n| System connectivity | Persistent connection or privileged access | Named-user access to production | Named-user access to non-production | None |\n\nCritical business services are those listed in the Northwind Business Impact Register, including payments processing, trade settlement, client onboarding, and regulatory reporting."
+ },
+ {
+  "chunk_id": "TIER-MTX#02",
+  "doc_id": "TIER-MTX",
+  "title": "Vendor Risk Tiering Matrix",
+  "status": "Current",
+  "section": "Section 3 \u2014 Reassessment Frequency",
+  "text": "Vendor Risk Tiering Matrix (TIER-MTX, Current)\nSection: Section 3 \u2014 Reassessment Frequency\n\n## Section 3 \u2014 Reassessment Frequency\n\n| Tier | Full reassessment | Sanctions rescreening | Financial review | Performance review |\n|---|---|---|---|---|\n| Tier 1 | Every 12 months | Daily (automated) | Annually | Quarterly business review |\n| Tier 2 | Every 24 months | Daily (automated) | Every 24 months | Semi-annual |\n| Tier 3 | Every 36 months | Daily (automated) | Not required | Annual |\n| Tier 4 | At renewal only | Daily (automated) | Not required | Not required |\n\nA reassessment is also triggered early by a material change: a security incident, a change of control, a new data type, or a new material subcontractor (FRTH-POL)."
+ },
+ {
+  "chunk_id": "TIER-MTX#03",
+  "doc_id": "TIER-MTX",
+  "title": "Vendor Risk Tiering Matrix",
+  "status": "Current",
+  "section": "Section 4 \u2014 Required Assessments by Tier",
+  "text": "Vendor Risk Tiering Matrix (TIER-MTX, Current)\nSection: Section 4 \u2014 Required Assessments by Tier\n\n## Section 4 \u2014 Required Assessments by Tier\n\n| Assessment | Tier 1 | Tier 2 | Tier 3 | Tier 4 |\n|---|---|---|---|---|\n| Northwind Security Questionnaire (NSQ) | Full | Full | Lite | Not required |\n| SOC 2 Type II or approved equivalent | Required | Required | Not required | Not required |\n| Financial health review (FIN-STD) | Required | Required | Not required | Not required |\n| Business continuity evidence (BCP-REQ) | Required, tested annually | Required, tested every 24 months | Self-attestation | Not required |\n| Exit plan (EXIT-PLN) | Required | Required | Not required | Not required |\n| Right-to-audit clause (AUDT-GDE) | Required | Required | Recommended | Not required |\n| Onsite or virtual assessment | At CISO discretion | Not required | Not required | Not required |\n| Sanctions and adverse media (SANC-PRC) | Required | Required | Sanctions only | Sanctions only |"
+ },
+ {
+  "chunk_id": "TIER-MTX#04",
+  "doc_id": "TIER-MTX",
+  "title": "Vendor Risk Tiering Matrix",
+  "status": "Current",
+  "section": "Section 5 \u2014 Overrides",
+  "text": "Vendor Risk Tiering Matrix (TIER-MTX, Current)\nSection: Section 5 \u2014 Overrides\n\n## Section 5 \u2014 Overrides\n\nThe TPRM Office may raise a tier on judgment but may not lower a tier below what the criteria produce. A request to lower a tier is an exception under EXC-PRC. Vendors supplying AI or machine-learning services are subject to the minimum tier rules in AIV-STD, and cloud service providers to CLD-STD."
+ }
+]

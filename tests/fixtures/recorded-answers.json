@@ -1,0 +1,554 @@
+[
+ {
+  "id": "GQ-001",
+  "question": "Who chairs the Third-Party Risk Committee and how often does it meet?",
+  "answer": "The Third-Party Risk Committee is chaired by the Chief Risk Officer and meets monthly. [doc_id: TPR-POL]",
+  "retrieved_doc_ids": [
+   "EXC-PRC",
+   "TIER-MTX",
+   "TPR-POL"
+  ]
+ },
+ {
+  "id": "GQ-002",
+  "question": "What annual spend level automatically makes a vendor Tier 1?",
+  "answer": "A vendor is Tier 1 if annual spend is more than $1,000,000 [doc_id: TIER-MTX].\n\nNote: some vendors are Tier 1 regardless of spend (for example, AI vendors whose output is used in client decisions) [doc_id: AIV-STD].",
+  "retrieved_doc_ids": [
+   "AIV-STD",
+   "CONC-STD",
+   "INCN-SLA",
+   "PRC-POL",
+   "TIER-MTX"
+  ]
+ },
+ {
+  "id": "GQ-003",
+  "question": "how often do tier 3 vendors get a full reassessment",
+  "answer": "Tier 3 vendors get a full reassessment every 36 months. [doc_id: TIER-MTX][doc_id: DUE-STD]\n\nSupporting details:\n- Reassessment frequency is set in the Vendor Risk Tiering Matrix (TIER-MTX). [doc_id: TIER-MTX]  \n- The Vendor Manager must start the reassessment no later than 60 days before the due date; a reassessment more than 30 days overdue is reported to the TPRC and blocks contract renewal. [doc_id: DUE-STD]  \n- A reassessment may be triggered earlier by a material change (e.g., security incident, change of control, new data type, or new material subcontractor). [doc_id: TIER-MTX]",
+  "retrieved_doc_ids": [
+   "DUE-STD",
+   "TIER-MTX",
+   "TPR-POL"
+  ]
+ },
+ {
+  "id": "GQ-004",
+  "question": "Which vendors have to give us a penetration test summary, and how recent does the test need to be?",
+  "answer": "Answer: Tier 1 vendors must provide an executive summary of an independent penetration test performed within the last 12 months, including the status of any critical or high findings. [doc_id: DUE-STD]\n\nSupporting detail: Tier 1 is any vendor that meets any Tier\u20111 criterion (examples include: access to restricted data or personal data for >100,000 people; supporting a critical business service such as payments/trade settlement/client onboarding/regulatory reporting; annual spend > $1,000,000; or persistent/privileged system connectivity). The TPRM Office assigns the tier at intake and a vendor takes the highest tier triggered by any single criterion. [doc_id: TIER-MTX]\n\nIf you want, tell me a specific vendor and I can confirm whether they\u2019re classified as Tier 1.",
+  "retrieved_doc_ids": [
+   "DUE-OLD",
+   "DUE-STD",
+   "TIER-MTX",
+   "TPR-POL"
+  ]
+ },
+ {
+  "id": "GQ-005",
+  "question": "Under the old v2.1 due diligence standard, how often were Tier 1 suppliers reviewed?",
+  "answer": "Answer: Every 24 months. [doc_id: DUE-OLD]\n\nSupporting detail: The Vendor Due Diligence Standard v2.1 (DUE-OLD) is superseded by the current DUE-STD. [doc_id: DUE-STD] The current standard now requires Tier 1 reassessment every 12 months. [doc_id: DUE-STD]",
+  "retrieved_doc_ids": [
+   "DUE-OLD",
+   "DUE-STD",
+   "FIN-STD",
+   "TIER-MTX"
+  ]
+ },
+ {
+  "id": "GQ-006",
+  "question": "How do we verify a new vendor's bank details before paying them?",
+  "answer": "Answer: Follow the Vendor Onboarding Procedure.\n\n- Accounts Payable must verify the vendor\u2019s tax ID and bank details before payment. [doc_id: ONB-PRC]  \n- Bank details must be confirmed by a callback to a telephone number obtained independently of the vendor\u2019s submitted form \u2014 never call a number taken from the submitted form. [doc_id: ONB-PRC]  \n- Any later change to bank details requires the same independent callback before the change is applied. [doc_id: ONB-PRC]  \n- Do not activate payments (or provide access/data) until onboarding steps are complete. [doc_id: ONB-PRC]",
+  "retrieved_doc_ids": [
+   "DUE-OLD",
+   "FIN-STD",
+   "ONB-PRC"
+  ]
+ },
+ {
+  "id": "GQ-007",
+  "question": "How many days before expiry do I need to open the renewal case for a Tier 1 contract?",
+  "answer": "Open the renewal case no later than 120 days before the Tier 1 contract expiry. [doc_id: RNW-PRC]\n\nSupporting detail: ProcureNet sends reminders 30 days before each window opens; a renewal case opened late must be reported to the Head of Procurement, and Tier 1 (or Tier 2) late openings are also reported to the TPRC. [doc_id: RNW-PRC]",
+  "retrieved_doc_ids": [
+   "RNW-PRC"
+  ]
+ },
+ {
+  "id": "GQ-008",
+  "question": "After we terminate a vendor, how long do they have to send us the data destruction certificate?",
+  "answer": "They must deliver a signed certificate within 30 days of the termination effective date. [doc_id: EXIT-PLN]\n\nSupporting detail: the certificate must identify the data sets, destruction method, date, and the vendor officer signing (and must cover subcontractor copies). The TPRM Office will escalate any certificate not received within 30 days to Legal. [doc_id: EXIT-PLN]",
+  "retrieved_doc_ids": [
+   "ACC-STD",
+   "DUE-STD",
+   "EXIT-PLN",
+   "RET-SCH"
+  ]
+ },
+ {
+  "id": "GQ-009",
+  "question": "We're running a 2 week pilot with a vendor using a sample of real client records. Do we need a DPA for that?",
+  "answer": "Short answer: Yes. A DPA is required before you share any personal data with a vendor \u2014 test or pilot data included. [doc_id: DPA-REQ]\n\nDetails / next steps:\n- A DPA is mandatory before any personal data is shared, in any volume, including test or pilot data. A missing DPA cannot be covered by an exception. [doc_id: DPA-REQ]  \n- Pseudonymized data is still treated as personal data; only fully anonymized aggregate data is not \u2014 and the Privacy Office must confirm anonymization in writing. [doc_id: DPA-REQ]  \n- Use the Northwind DPA template; vendor contracts are acceptable only if they contain the required mandatory clauses. [doc_id: DPA-REQ]  \n- If the vendor will use Northwind data to train or improve models, that use is prohibited without prior written consent and must be addressed in the DPA/contract. [doc_id: AIV-STD] [doc_id: DPA-REQ]  \n- Legal/Privacy approve non-standard DPA language and the TPRM Office must confirm a signed DPA is on file before onboarding proceeds. [doc_id: DPA-REQ]\n\nDo you know whether the sample is fully anonymized (and has Privacy Office sign-off) or whether the vendor will be using the data to train models?",
+  "retrieved_doc_ids": [
+   "AIV-STD",
+   "DPA-REQ"
+  ]
+ },
+ {
+  "id": "GQ-010",
+  "question": "What ownership percentage triggers beneficial owner sanctions screening for a Tier 1 vendor?",
+  "answer": "10% or more triggers beneficial-owner sanctions screening for a Tier 1 vendor [doc_id: SANC-PRC].\n\nProcurement initiates this sanctions screening during vendor onboarding under the Vendor Onboarding Procedure [doc_id: ONB-PRC].",
+  "retrieved_doc_ids": [
+   "DUE-OLD",
+   "DUE-STD",
+   "ONB-PRC",
+   "SANC-PRC"
+  ]
+ },
+ {
+  "id": "GQ-011",
+  "question": "At what share of total third-party spend does a single vendor group get flagged for concentration?",
+  "answer": "A single vendor group is flagged when it accounts for more than 15% of Northwind\u2019s total annual third-party spend. [doc_id: CONC-STD]",
+  "retrieved_doc_ids": [
+   "CLD-STD",
+   "CONC-STD"
+  ]
+ },
+ {
+  "id": "GQ-012",
+  "question": "How much notice can a vendor demand before we do a for-cause audit?",
+  "answer": "They can demand up to 10 business days' prior written notice for a for-cause audit [doc_id: AUDT-GDE].\n\nSupporting detail: routine audits may require up to 30 days' notice, while for-cause audits (triggered by a security incident, a regulatory request, or a suspected material breach) may require no more than 10 business days' notice [doc_id: AUDT-GDE].",
+  "retrieved_doc_ids": [
+   "ACC-STD",
+   "AUDT-GDE"
+  ]
+ },
+ {
+  "id": "GQ-013",
+  "question": "How much notice does a Tier 1 vendor have to give before adding a new material subcontractor?",
+  "answer": "Tier 1 vendors must give Northwind at least 60 days' prior written notice before adding or replacing a material subcontractor. [doc_id: FRTH-POL]\n\nSupporting detail: The Fourth-Party (Subcontractor) Policy also notes Northwind may object to a new material subcontractor and can terminate affected services if the objection isn\u2019t resolved. [doc_id: FRTH-POL]",
+  "retrieved_doc_ids": [
+   "FRTH-POL"
+  ]
+ },
+ {
+  "id": "GQ-014",
+  "question": "What is the notification deadline for a confirmed personal data breach at a Tier 1 vendor?",
+  "answer": "Notification deadline: 24 hours (clock hours, including weekends and public holidays). [doc_id: INCN-SLA]\n\nNote: the DPA also requires vendor breach notification per INCN\u2011SLA and, in any case, no later than 72 hours after the vendor becomes aware. [doc_id: DPA-REQ]",
+  "retrieved_doc_ids": [
+   "DPA-REQ",
+   "FRTH-POL",
+   "INCN-SLA"
+  ]
+ },
+ {
+  "id": "GQ-015",
+  "question": "How long can we keep raw prompts with personal data from our internal AI assistant, and how long can the summarized logs be kept?",
+  "answer": "Answer\n- Raw prompts/responses that contain personal data: must not be stored for more than 30 days. [doc_id: RET-SCH]\n- Summarized or hashed interaction logs (personal data removed or hashed): may be retained for up to 13 months from the date of interaction. [doc_id: RET-SCH]\n\nSupporting detail (brief)\n- The 30-day limit covers all storage locations, including application logs, observability/tracing platforms, and debugging exports. [doc_id: RET-SCH]\n- \"Summarized\" means metadata with personal data removed; \"hashed\" means prompts replaced by a one-way hash that cannot reconstruct the text. [doc_id: RET-SCH]\n- Logs under a legal hold are exempt from these retention rules for the duration of the hold. [doc_id: RET-SCH]\n- Vendor-provided logs are subject to the same Northwind retention rules (RET-SCH \u00a73). [doc_id: AIV-STD]",
+  "retrieved_doc_ids": [
+   "AIV-STD",
+   "CLD-STD",
+   "DPA-REQ",
+   "RET-SCH"
+  ]
+ },
+ {
+  "id": "GQ-016",
+  "question": "Which cloud regions are we allowed to store Northwind data in?",
+  "answer": "Answer: Northwind data may be stored only in these approved regions: United States; European Union; United Kingdom. [doc_id: CLD-STD]\n\nSupporting detail: Storing data or replicating backups in any other region requires approval from the CISO office and Legal and a DPA amendment when personal data is involved. The CSP contract must also require at least 90 days' notice of any change to the regions where Northwind data is stored. [doc_id: CLD-STD]",
+  "retrieved_doc_ids": [
+   "AIV-STD",
+   "CLD-STD"
+  ]
+ },
+ {
+  "id": "GQ-017",
+  "question": "What rating does a vendor get if its auditor issues a going-concern qualification?",
+  "answer": "Red.\n\nThe Vendor Financial Health Review Standard states that \"a going-concern qualification in the auditor's opinion (this alone produces Red).\" [doc_id: FIN-STD]",
+  "retrieved_doc_ids": [
+   "AUDT-GDE",
+   "DUE-STD",
+   "FIN-STD"
+  ]
+ },
+ {
+  "id": "GQ-018",
+  "question": "What RTO and RPO do Tier 1 vendors have to meet?",
+  "answer": "Tier 1 vendors: RTO = 4 hours; RPO = 15 minutes. [doc_id: BCP-REQ]\n\nSupporting detail: Tier 1 vendors must perform an annual full failover test and provide test results to Northwind within 30 days of the test. Contracts must include the business continuity clause (BCP-REQ). [doc_id: BCP-REQ] [doc_id: TPR-POL]",
+  "retrieved_doc_ids": [
+   "BCP-REQ",
+   "FRTH-POL",
+   "TPR-POL"
+  ]
+ },
+ {
+  "id": "GQ-019",
+  "question": "How many bids do I need for a $400k consulting engagement?",
+  "answer": "You must obtain three competitive bids via a formal RFP run by Procurement for a $400,000 engagement [doc_id: PRC-POL]. The approver for this contract value is the managing director of the business unit [doc_id: PRC-POL].",
+  "retrieved_doc_ids": [
+   "CONC-STD",
+   "PRC-POL"
+  ]
+ },
+ {
+  "id": "GQ-020",
+  "question": "What is the maximum duration of a third-party risk exception?",
+  "answer": "Maximum initial exception duration is 180 days. [doc_id: EXC-PRC]\n\nIt may be extended once, for up to 90 days by the original approval authority (total up to 270 days). [doc_id: EXC-PRC]\n\nAny need beyond 270 days must be escalated to the TPRC, which may require vendor exit or formal acceptance of the risk by the business owner. [doc_id: EXC-PRC]",
+  "retrieved_doc_ids": [
+   "EXC-PRC"
+  ]
+ },
+ {
+  "id": "GQ-021",
+  "question": "How often are we supposed to hold business reviews with Tier 1 vendors?",
+  "answer": "Quarterly \u2014 Tier 1 vendors require a quarterly business review (QBR). [doc_id: PERF-STD]\n\nQBRs are attended by the Vendor Manager, the Business Owner or delegate, and a vendor executive sponsor; minutes and actions are recorded in ProcureNet within 5 business days of the meeting. [doc_id: PERF-STD]",
+  "retrieved_doc_ids": [
+   "BCP-REQ",
+   "DUE-OLD",
+   "FIN-STD",
+   "PERF-STD",
+   "TIER-MTX"
+  ]
+ },
+ {
+  "id": "GQ-022",
+  "question": "How often must vendor user accounts be recertified, and by whom?",
+  "answer": "Vendor user accounts must be recertified quarterly by the Vendor Manager. [doc_id: ACC-STD]\n\nAccounts not recertified within 10 business days of the recertification deadline are disabled. [doc_id: ACC-STD]",
+  "retrieved_doc_ids": [
+   "ACC-STD",
+   "DUE-STD"
+  ]
+ },
+ {
+  "id": "GQ-023",
+  "question": "What's the most a single gift from a vendor can be worth for me to keep it?",
+  "answer": "You may keep a single vendor gift worth up to $100. [doc_id: GIFT-POL]\n\nSupporting details:\n- The aggregate value of gifts accepted from any one vendor may not exceed $250 per calendar year per employee. [doc_id: GIFT-POL]  \n- Gifts above these limits must be politely declined or, if refusal would cause offense, surrendered to Compliance within 5 business days. [doc_id: GIFT-POL]  \n- Cash and cash equivalents (gift cards, prepaid cards, vouchers, securities) are prohibited at any value. [doc_id: GIFT-POL]",
+  "retrieved_doc_ids": [
+   "GIFT-POL"
+  ]
+ },
+ {
+  "id": "GQ-024",
+  "question": "Can an AI vendor use our prompts and outputs to fine-tune its models?",
+  "answer": "Short answer: No \u2014 not without prior written consent. Using Northwind prompts, inputs, outputs, or feedback to train or fine\u2011tune the vendor\u2019s (or any third party\u2019s) models is prohibited unless Northwind\u2019s Data Owner and Legal give written consent. [doc_id: AIV-STD]\n\nDetails: That prohibition must be included in the contract and the DPA (see DPA\u2011REQ clause 10). Consent, if given, must name the data set and purpose and may be withdrawn on 30 days' notice. The vendor must also disclose where prompts/inputs/outputs are processed and stored and for how long. [doc_id: AIV-STD]",
+  "retrieved_doc_ids": [
+   "AIV-STD"
+  ]
+ },
+ {
+  "id": "GQ-025",
+  "question": "We're terminating a Tier 1 vendor at month end. How fast do their accounts have to be shut off, and when is the destruction certificate due?",
+  "answer": "Answer\n- Access: all vendor accounts/tokens/keys/badges must be revoked within 24 hours of the termination effective date. [doc_id: ACC-STD]  \n- Destruction certificate: the vendor must deliver a signed certificate of data destruction within 30 days of the termination effective date. [doc_id: EXIT-PLN]\n\nSupporting detail\n- The certificate must identify the data sets, destruction method, date, and the vendor officer signing it, and must cover subcontractor copies as well; the TPRM Office escalates certificates not received within 30 days to Legal. [doc_id: EXIT-PLN]  \n- Accounts may be suspended immediately if there is a security incident (CISO authority). [doc_id: ACC-STD]  \n- Accounts Payable will settle the final invoice only after the destruction certificate is received for Tier 1/2 vendors; Procurement then deactivates the vendor master record after final payment. [doc_id: EXIT-PLN]",
+  "retrieved_doc_ids": [
+   "ACC-STD",
+   "EXIT-PLN",
+   "INCN-SLA"
+  ]
+ },
+ {
+  "id": "GQ-026",
+  "question": "A subcontractor of one of our Tier 1 vendors had a breach that exposed client personal data. How long does our vendor have to tell us?",
+  "answer": "Short answer: The vendor must notify Northwind within 24 hours (clock hours) of a confirmed personal\u2011data breach at a material subcontractor that affects Northwind data or services. [doc_id: INCN-SLA] [doc_id: FRTH-POL]\n\nSupporting detail:\n- Incidents at a material subcontractor that affect Northwind data or services must be reported by the vendor under the same deadlines that apply to the vendor itself. [doc_id: FRTH-POL]  \n- The Vendor Incident Notification SLA sets the deadline for a confirmed personal\u2011data breach (Tier 1) \u2014 and for an incident at a material subcontractor affecting Northwind \u2014 at 24 hours. Hours are clock hours (including weekends/holidays). [doc_id: INCN-SLA]  \n- The initial notification must include, to the extent known, a description of the incident, times, affected Northwind data/services, containment actions, and a 24/7 vendor contact; missing details must not delay the initial notice. [doc_id: INCN-SLA]  \n\nIf you want, I can draft the notification you should expect to receive and checklist items to confirm.",
+  "retrieved_doc_ids": [
+   "FRTH-POL",
+   "INCN-SLA"
+  ]
+ },
+ {
+  "id": "GQ-027",
+  "question": "FCC confirmed our payroll vendor is a sanctions match. Can we get an exception to keep them running while we find a replacement?",
+  "answer": "Short answer: No. A confirmed sanctions true match cannot be excepted \u2014 payments must be blocked and the vendor put on hold. [doc_id: EXC-PRC] [doc_id: SANC-PRC]\n\nSupporting details:\n- When FCC confirms a true match it escalates to the Chief Compliance Officer and Legal within 24 hours; all payments to the vendor are blocked immediately and the vendor master record is placed on hold. [doc_id: SANC-PRC]  \n- Do not tell the vendor why payments are held; communications about the hold go through Legal. [doc_id: SANC-PRC]  \n- The confirmed sanctions match is explicitly listed as something that cannot be excepted under the exception procedure. [doc_id: EXC-PRC]  \n- The TPRM Office will assess invoking the stressed exit plan (EXIT-PLN \u00a75) to manage transition to a replacement. [doc_id: SANC-PRC]\n\nNext step: Coordinate immediately with FCC, Legal, and TPRM to execute the stressed-exit process and onboard a replacement. [doc_id: SANC-PRC]",
+  "retrieved_doc_ids": [
+   "DUE-OLD",
+   "EXC-PRC",
+   "SANC-PRC"
+  ]
+ },
+ {
+  "id": "GQ-028",
+  "question": "For a Tier 1 renewal, when do I open the renewal case and what concentration spend threshold does TPRM check?",
+  "answer": "Answer\n- Open the Tier 1 renewal case no later than 120 days before the contract expiry date. [doc_id: RNW-PRC]\n- TPRM checks whether the vendor breaches the concentration spend threshold of >15% of Northwind\u2019s total annual third\u2011party spend. [doc_id: CONC-STD]\n\nSupporting detail\n- The Contract Renewal Procedure requires a renewal case for Tier 1 be opened 120 days before expiry and states TPRM confirms renewals do not breach concentration thresholds. [doc_id: RNW-PRC]\n- The Concentration Risk Standard defines the spend threshold as a single vendor group accounting for more than 15% of total annual third\u2011party spend and notes concentration is assessed at renewal. [doc_id: CONC-STD]",
+  "retrieved_doc_ids": [
+   "CONC-STD",
+   "RNW-PRC"
+  ]
+ },
+ {
+  "id": "GQ-029",
+  "question": "Vendor wants us to rely on their SOC 2 instead of auditing them. Their Type II report is 9 months old. Is that OK?",
+  "answer": "Short answer: Yes \u2014 a SOC 2 Type II report that is 9 months old can be acceptable, provided it meets the DUE-STD requirements and the report\u2019s scope covers the controls we need. [doc_id: DUE-STD] [doc_id: AUDT-GDE]\n\nSupporting detail and next steps:\n- Requirement: Tier 1 and Tier 2 vendors must provide a SOC 2 Type II; the report must cover at least 6 months and be dated no more than 12 months before the review date. [doc_id: DUE-STD]  \n- Reliance in place of a routine audit: a current SOC 2 Type II report meeting DUE-STD \u00a74.2 may satisfy a routine audit for the controls in its scope. Ensure the contract preserves Northwind\u2019s right to audit any controls outside the report\u2019s scope. [doc_id: AUDT-GDE]  \n- What I need from you: the vendor\u2019s risk tier (Tier 1/2?), the SOC 2 report date and the period it covers, and the report scope (which trust services criteria are included). If you want, upload the report and I\u2019ll check it against the requirements.",
+  "retrieved_doc_ids": [
+   "AUDT-GDE",
+   "CLD-STD",
+   "DUE-OLD",
+   "DUE-STD",
+   "TIER-MTX"
+  ]
+ },
+ {
+  "id": "GQ-030",
+  "question": "One of our Tier 1 vendors missed an incident notification deadline last quarter. What does that do to their scorecard, and does it matter at renewal?",
+  "answer": "Short answer: Yes \u2014 the missed Tier 1 notification is recorded and will set the vendor\u2019s incident-management line to Red for that scorecard period, and that scorecard (and the incident/deadline performance) is reviewed at renewal, so it can affect the renewal decision (including triggering a PIP or, with other high/critical findings, blocking renewal). [doc_id: INCN-SLA] [doc_id: PERF-STD] [doc_id: RNW-PRC]\n\nSupporting detail (sources):\n- Missed vendor notification deadlines are recorded on the vendor\u2019s performance scorecard. [doc_id: INCN-SLA]  \n- A missed INCN\u2011SLA notification deadline automatically sets the incident-management rating to Red for that period. [doc_id: PERF-STD]  \n- The overall scorecard rating is the lowest of service levels, incident management, and risk & compliance, so a Red incident-management rating can drive a Red overall rating. [doc_id: PERF-STD]  \n- A Red overall rating, or SLA breaches in two consecutive quarters, requires a performance improvement plan (PIP); failure of a PIP can lead to escalation and contractual remedies or exit. [doc_id: PERF-STD]  \n- The renewal risk review includes the last four performance scorecards and any incidents during the term (including whether notification deadlines were met), and these are considered when deciding whether to renew. [doc_id: RNW-PRC]  \n- If the renewal review surfaces Critical/High findings without approved exceptions, the renewal may not be approved. [doc_id: RNW-PRC]  \n\nIf you want, I can pull the vendor\u2019s last four scorecards and the incident timeline and summarize the specific impact on their renewal case.",
+  "retrieved_doc_ids": [
+   "INCN-SLA",
+   "PERF-STD",
+   "RNW-PRC",
+   "TIER-MTX"
+  ]
+ },
+ {
+  "id": "GQ-031",
+  "question": "A bidder in our open RFP offered the evaluation team $150 game tickets. Can we take them, and do we have to log it?",
+  "answer": "Short answer: No \u2014 evaluators may not accept the tickets, and yes \u2014 the offer must be recorded. [doc_id: GIFT-POL]\n\nSupporting detail:\n- Employees involved in an active RFP may not accept any gift or entertainment, of any value, from any bidder until the contract is awarded (blackout during sourcing). [doc_id: GIFT-POL]  \n- Every gift or entertainment offered by a vendor and valued above $50, whether accepted or declined, must be recorded in the Gifts and Entertainment Register within 5 business days. [doc_id: GIFT-POL]  \n- Note: entertainment where the vendor does not attend is treated as a gift (so the tickets are treated as a gift) and failure to disclose or record is a disciplinary matter. [doc_id: GIFT-POL]",
+  "retrieved_doc_ids": [
+   "GIFT-POL"
+  ]
+ },
+ {
+  "id": "GQ-032",
+  "question": "We want a generative AI SaaS tool that will process client personal data. What's the minimum tier, and what does the DPA have to say about model training?",
+  "answer": "Answer\n- Minimum tier: Tier 2 (Tier 1 if the AI output is used to make decisions about a client). [doc_id: AIV-STD]\n- DPA requirement about model training: the DPA must prohibit using Northwind personal data to train, fine\u2011tune, or improve the vendor\u2019s products or models without Northwind\u2019s written consent. [doc_id: DPA-REQ]\n\nSupporting detail\n- Any vendor processing personal data requires a DPA before any personal data is shared. [doc_id: DPA-REQ]  \n- The AI addendum sets the minimum tiers: processing Northwind Confidential or personal data = Tier 2 minimum; if the vendor\u2019s outputs are used in client decisioning (e.g., credit, onboarding, fraud, suitability) the vendor is Tier 1 regardless of spend. [doc_id: AIV-STD]  \n- The DPA\u2019s mandatory clauses include an explicit prohibition on using Northwind personal data to train or improve vendor models without written consent (and other standard clauses such as processing scope, security, sub-processor controls, breach notification, deletion/return, and audit rights). [doc_id: DPA-REQ]",
+  "retrieved_doc_ids": [
+   "AIV-STD",
+   "DPA-REQ"
+  ]
+ },
+ {
+  "id": "GQ-033",
+  "question": "How many weeks of parental leave do I get?",
+  "answer": "I can't find a parental-leave entitlement in the policy documents returned by the search. The documents located were:\n\n- Third-Party Risk Management Policy [doc_id: TPR-POL]  \n- Gifts, Entertainment and Vendor Conflicts of Interest Policy [doc_id: GIFT-POL]  \n- Fourth-Party (Subcontractor) Policy [doc_id: FRTH-POL]  \n- Cloud Service Provider Assessment Standard [doc_id: CLD-STD]\n\nNone of those passages include parental leave details. If you want, I can search specifically for HR/benefits or payroll policies (e.g., \"parental leave\", \"leave of absence\", \"benefits\")\u2014shall I do that?",
+  "retrieved_doc_ids": [
+   "CLD-STD",
+   "FRTH-POL",
+   "GIFT-POL",
+   "TPR-POL"
+  ]
+ },
+ {
+  "id": "GQ-034",
+  "question": "What's the per diem for meals when I travel to a client site?",
+  "answer": "I can\u2019t find a per-diem amount in the policies. The Procurement Policy explicitly excludes employee expense reimbursements from its scope [doc_id: PRC-POL]. The Third-Party Risk Management Policy also notes payments to individuals for employee reimbursements are out of scope [doc_id: TPR-POL]. \n\nThose documents do not state a meal per diem. Please check the Employee Expense Reimbursement policy or ask Finance/HR for the current per-diem rate.",
+  "retrieved_doc_ids": [
+   "CLD-STD",
+   "GIFT-POL",
+   "PRC-POL",
+   "TPR-POL"
+  ]
+ },
+ {
+  "id": "GQ-035",
+  "question": "What's the guest Wi-Fi password for the 4th floor?",
+  "answer": "I can't find the guest Wi\u2011Fi password in the policies.\n\nSearch returned the Fourth\u2011Party (Subcontractor) Policy (FRTH\u2011POL) [doc_id: FRTH-POL] and the Cloud Service Provider Assessment Standard (CLD\u2011STD) [doc_id: CLD-STD]. FRTH\u2011POL defines fourth parties and disclosure/incident rules [doc_id: FRTH-POL]; CLD\u2011STD covers encryption/key requirements for cloud services [doc_id: CLD-STD]. Neither document includes guest Wi\u2011Fi passwords or facility access details, so the policies do not cover this.\n\nPlease contact IT or Facilities for the 4th\u2011floor guest Wi\u2011Fi password, or tell me if you want me to search the policies again.",
+  "retrieved_doc_ids": [
+   "CLD-STD",
+   "FRTH-POL"
+  ]
+ },
+ {
+  "id": "GQ-036",
+  "question": "How do I reset my own Northwind laptop password?",
+  "answer": "I could not find a Northwind policy that describes how an employee resets their own laptop password.\n\nSupporting detail: the policy search returned documents about vendor offboarding, cloud requirements, business continuity, and conflicts of interest\u2014not end-user laptop password procedures (examples: EXIT-PLN [doc_id: EXIT-PLN], CLD-STD [doc_id: CLD-STD], BCP-REQ [doc_id: BCP-REQ], GIFT-POL [doc_id: GIFT-POL]).\n\nWould you like me to search the policies again with different terms or look for IT/helpdesk contact information?",
+  "retrieved_doc_ids": [
+   "BCP-REQ",
+   "CLD-STD",
+   "EXIT-PLN",
+   "GIFT-POL"
+  ]
+ },
+ {
+  "id": "GQ-037",
+  "question": "What is the company 401(k) match?",
+  "answer": "I could not find the company 401(k) match in the policy documents. The search returned Third-Party Risk Management Policy [doc_id: TPR-POL], Fourth-Party (Subcontractor) Policy [doc_id: FRTH-POL], and Gifts/Entertainment & Vendor Conflicts Policy [doc_id: GIFT-POL]; none of these discuss the 401(k) match. [doc_id: TPR-POL] [doc_id: FRTH-POL] [doc_id: GIFT-POL]\n\nThe policies do not cover this question \u2014 please contact HR/Benefits for the company 401(k) match details.",
+  "retrieved_doc_ids": [
+   "FRTH-POL",
+   "GIFT-POL",
+   "TPR-POL"
+  ]
+ },
+ {
+  "id": "GQ-038",
+  "question": "Is the office closed on the day after Thanksgiving?",
+  "answer": "The policies do not state whether the office is closed on the day after Thanksgiving.\n\nSupporting detail: I searched the Northwind policy documents and found no policy that specifies company office holiday closures. The returned documents relate to other topics (for example, the Vendor Incident Notification schedule mentions \u201cpublic holidays\u201d only in the context of clock hours for incident deadlines [doc_id: INCN-SLA], and other hits are about gifts and third\u2011party risk [doc_id: GIFT-POL] [doc_id: TPR-POL]). For an answer, please check the company holiday calendar or contact HR or Facilities.",
+  "retrieved_doc_ids": [
+   "CLD-STD",
+   "FRTH-POL",
+   "GIFT-POL",
+   "INCN-SLA",
+   "TPR-POL"
+  ]
+ },
+ {
+  "id": "GQ-039",
+  "question": "What was Northwind's net revenue last fiscal year?",
+  "answer": "I could not find Northwind\u2019s net revenue for last fiscal year in the policy documents. The search results included items such as the Vendor Financial Health Review Standard [doc_id: FIN-STD], the Procurement Policy [doc_id: PRC-POL], and Vendor Business Continuity and Resilience Requirements [doc_id: BCP-REQ], none of which contain Northwind\u2019s company financial statements or net-revenue figures [doc_id: FIN-STD][doc_id: PRC-POL][doc_id: BCP-REQ].\n\nIf you want that figure I can:\n- Request access to Northwind\u2019s annual report or financial statements (Finance/Investor Relations), or\n- Search other non-policy internal documents if you grant me access or point me to them.",
+  "retrieved_doc_ids": [
+   "BCP-REQ",
+   "FIN-STD",
+   "GIFT-POL",
+   "PRC-POL"
+  ]
+ },
+ {
+  "id": "GQ-040",
+  "question": "Can I work remotely from another country for a month?",
+  "answer": "Short answer: Maybe \u2014 but only if doing so doesn\u2019t create an unauthorized cross\u2011border personal\u2011data transfer. Remote access from another country counts as a transfer and (for data collected in the EU/EEA/UK) requires an approved transfer mechanism and a transfer\u2011impact assessment completed by Privacy Counsel/Legal before you do it [doc_id: DPA-REQ].\n\nWhat to do:\n- If you will access any personal data (including employee, client, or prospect data), stop and get Legal/Privacy approval \u2014 the policy requires an approved transfer mechanism and a transfer\u2011impact assessment by Privacy Counsel [doc_id: DPA-REQ].  \n- Note the TPRM/procurement docs available focus on data transfers and vendor access (vendor access is explicitly covered by the Vendor Access Management Standard) and do not set general employee work\u2011from\u2011abroad rules; for HR, tax, immigration, or IT connectivity/security rules, contact HR and IT/Global Mobility [doc_id: ACC-STD].\n\nIf you want, tell me (a) which country you\u2019d be in, and (b) whether you\u2019ll access personal data or confidential systems, and I\u2019ll check the policies again for any additional requirements.",
+  "retrieved_doc_ids": [
+   "ACC-STD",
+   "DPA-REQ",
+   "EXC-PRC",
+   "EXIT-PLN",
+   "FRTH-POL"
+  ]
+ },
+ {
+  "id": "GQ-041",
+  "question": "tier 1 reasessment frequncy?",
+  "answer": "Tier 1 full reassessment: every 12 months. [doc_id: TIER-MTX][doc_id: DUE-STD]\n\nSupporting details:\n- Sanctions rescreening: daily (automated). [doc_id: TIER-MTX]\n- Financial review: annually. [doc_id: TIER-MTX]\n- Performance review: quarterly business review. [doc_id: TIER-MTX]\n- The Vendor Manager must start the reassessment no later than 60 days before the due date; reassessments >30 days overdue are reported to the TPRC and block contract renewal. [doc_id: DUE-STD]",
+  "retrieved_doc_ids": [
+   "CLD-STD",
+   "DUE-OLD",
+   "DUE-STD",
+   "TIER-MTX"
+  ]
+ },
+ {
+  "id": "GQ-042",
+  "question": "sox 2 type 2 report how old can it be",
+  "answer": "Short answer\n- A SOC 2 Type II must cover at least 6 months and be dated no more than 12 months before the review date. [doc_id: DUE-STD]  \n- SOC 2 Type I reports are not accepted as a substitute. [doc_id: DUE-STD]  \n- Bridge letters may be used to cover a gap of up to 3 months after the report period end. [doc_id: DUE-STD]\n\nAdditional note\n- For cloud providers, the Cloud Service Provider standard requires a SOC 2 Type II that meets the Vendor Due Diligence Standard \u00a74.2. [doc_id: CLD-STD]",
+  "retrieved_doc_ids": [
+   "CLD-STD",
+   "DUE-OLD",
+   "DUE-STD"
+  ]
+ },
+ {
+  "id": "GQ-043",
+  "question": "rto/rpo for tier2 vendors",
+  "answer": "Answer: Tier 2 vendors \u2014 RTO = 24 hours; RPO = 4 hours. [doc_id: BCP-REQ]\n\nSupporting detail: Tier 2 vendors must perform recovery testing every 24 months and provide test results to Northwind within 30 days. [doc_id: BCP-REQ] Tier 2 vendors must also retain immutable/offline backups of Northwind data and test restoration from those backups at least annually. [doc_id: BCP-REQ]",
+  "retrieved_doc_ids": [
+   "BCP-REQ",
+   "FRTH-POL",
+   "TPR-POL"
+  ]
+ },
+ {
+  "id": "GQ-044",
+  "question": "do we need dpa for pilot w/ pii??",
+  "answer": "Yes. A DPA is required before sharing any personal data with a vendor \u2014 including pilot or test data. [doc_id: DPA-REQ]\n\nSupporting details:\n- Pseudonymized data is still treated as personal data; fully anonymized aggregate data is not only if the Privacy Office confirms the anonymization in writing. [doc_id: DPA-REQ]\n- A missing DPA cannot be covered by an exception. [doc_id: DPA-REQ]\n- Privacy Counsel handles non-standard DPA language and the TPRM Office must confirm a signed DPA is on file before onboarding approval. [doc_id: DPA-REQ]",
+  "retrieved_doc_ids": [
+   "DPA-REQ"
+  ]
+ },
+ {
+  "id": "GQ-045",
+  "question": "brech notifcation deadline teir 2 vendor",
+  "answer": "Answer: For a Tier 2 vendor a confirmed personal\u2011data breach must be reported within 48 hours. [doc_id: INCN-SLA]\n\nSupporting details:\n- \"Confirmed personal\u2011data breach involving Northwind data\" \u2014 Tier 2 = 48 hours. [doc_id: INCN-SLA]  \n- Notification must be by the vendor incident mailbox (vendor-incidents@northwindcg.example) and the TPRM incident hotline; hours are clock hours (including weekends/holidays). [doc_id: INCN-SLA]  \n- An incident at a material subcontractor must be notified by the vendor under the same deadlines; \"our subcontractor did not tell us\" is not an acceptable defense. [doc_id: FRTH-POL]  \n- On receipt of a Tier 1 or Tier 2 notification the CISO office opens a third\u2011party incident record within 1 hour. [doc_id: INCN-SLA]\n\nIf you meant a different incident type (e.g., ransomware or outage), tell me which and I\u2019ll give the specific Tier\u20112 deadline.",
+  "retrieved_doc_ids": [
+   "FRTH-POL",
+   "INCN-SLA"
+  ]
+ },
+ {
+  "id": "GQ-046",
+  "question": "max excpetion lenght for a vendor risk excpetion",
+  "answer": "Answer:\n- Initial maximum exception duration: 180 days. [doc_id: EXC-PRC]\n- One extension allowed up to 90 days (so up to 270 days total) if the original approval authority documents progress. [doc_id: EXC-PRC]\n- Any need beyond 270 days must be escalated to the TPRC, which may require exiting the vendor or formal risk acceptance. [doc_id: EXC-PRC]\n\nSupporting detail:\nThese rules are from the current Third-Party Risk Exception Procedure, Section 5 (Duration). [doc_id: EXC-PRC]",
+  "retrieved_doc_ids": [
+   "ACC-STD",
+   "EXC-PRC",
+   "TPR-POL"
+  ]
+ },
+ {
+  "id": "GQ-047",
+  "question": "How long do we keep records?",
+  "answer": "Short answer: retention periods vary by record type and are defined in the TPRM Records Retention Schedule (RET-SCH, Current). See key periods below. [doc_id: RET-SCH]\n\nKey retention periods (examples):\n- Due diligence files (questionnaires, assurance reports): 7 years (trigger: end of vendor relationship). [doc_id: RET-SCH]  \n- Executed contracts, amendments, DPAs: 7 years (trigger: contract termination/expiry). [doc_id: RET-SCH]  \n- Renewal risk reviews: 7 years (trigger: contract termination/expiry). [doc_id: RET-SCH]  \n- Vendor incident records: 7 years (trigger: incident closure). [doc_id: RET-SCH]  \n- Exceptions: 7 years (trigger: exception expiry/closure). [doc_id: RET-SCH]  \n- Data destruction / exit certificates: 10 years (from date of certificate). [doc_id: RET-SCH]  \n- Sanctions/adverse\u2011media screening results: 5 years (end of vendor relationship). [doc_id: RET-SCH]  \n- Gifts & entertainment register entries: 5 years (date of entry). [doc_id: RET-SCH]  \n- Performance scorecards & QBR minutes: 3 years (date of scorecard). [doc_id: RET-SCH]  \n- Vendor access recertification evidence: 3 years (date of recertification). [doc_id: RET-SCH]  \n- Unsuccessful bid submissions: 3 years (award date). [doc_id: RET-SCH]  \n- Internal AI assistant interaction logs: raw personal\u2011data prompts/responses \u226430 days; summarized/hashed logs retained up to 13 months (unless on legal hold). [doc_id: RET-SCH]\n\nOther operational rules:\n- Records must be stored in ProcureNet or another Records Management\u2013approved system; personal drives/email/chat must be moved to an approved system within 30 days. [doc_id: RET-SCH]  \n- Disposal runs produce disposal logs, which are retained for 7 years. [doc_id: RET-SCH]\n\nIf you want, I can: (a) list the retention for a specific record type not shown above, or (b) provide the exact retention row for a named document category.",
+  "retrieved_doc_ids": [
+   "RET-SCH"
+  ]
+ },
+ {
+  "id": "GQ-048",
+  "question": "what's the deadline for vendors to notify us",
+  "answer": "Do you mean incident/breach notifications, change-of-control/financial events, or something else?\n\nIf you mean vendor incident/notification deadlines, the Vendor Incident Notification SLA (current) says:\n\n- Outage of a service supporting a critical business service: Tier 1 = 1 hour; Tier 2 = 4 hours; Tier 3 = next business day. [doc_id: INCN-SLA]  \n- Ransomware or destructive malware on systems storing/processing Northwind data: Tier 1 = 4 hours; Tier 2 = 8 hours; Tier 3 = 24 hours; Tier 4 = 48 hours. [doc_id: INCN-SLA]  \n- Confirmed personal-data breach involving Northwind data: Tier 1 = 24 hours; Tier 2 = 48 hours; Tier 3 = 72 hours; Tier 4 = 72 hours. [doc_id: INCN-SLA]  \n- Unauthorized access to Northwind data (not yet confirmed as a breach): Tier 1 = 24 hours; Tier 2 = 48 hours; Tier 3 = 72 hours; Tier 4 = 72 hours. [doc_id: INCN-SLA]  \n- Incident at a material subcontractor affecting Northwind: Tier 1 = 24 hours; Tier 2 = 48 hours; Tier 3 = 72 hours. [doc_id: INCN-SLA]  \n- Regulatory inquiry or enforcement action about the contracted services: Tier 1/2 = 5 business days; Tier 3 = 10 business days. [doc_id: INCN-SLA]  \n- Change of control or financial distress event: Tier 1/2 = 10 business days; Tier 3 = 30 days. [doc_id: INCN-SLA]\n\nHours are clock hours (including weekends and holidays). [doc_id: INCN-SLA]  \nThe notification clock starts when the vendor or any of its subcontractors becomes aware of the incident. [doc_id: INCN-SLA]\n\nIf you meant a different type of vendor notification, say which and I\u2019ll pull the exact deadline.",
+  "retrieved_doc_ids": [
+   "FIN-STD",
+   "INCN-SLA"
+  ]
+ },
+ {
+  "id": "GQ-049",
+  "question": "How often do we review vendors?",
+  "answer": "Short answer:\nWe review vendors per the Vendor Financial Health Review Standard: at onboarding; annually for Tier 1; every 24 months for Tier 2; Tier 3 and Tier 4 are not reviewed unless the TPRM Office requests it; and any listed trigger event requires a review within 15 business days. [doc_id: FIN-STD]\n\nSupporting detail:\n- Onboarding reviews are required as part of due diligence. [doc_id: FIN-STD]  \n- Tier 1: annual reviews. [doc_id: FIN-STD]  \n- Tier 2: every 24 months. [doc_id: FIN-STD]  \n- Tier 3 and Tier 4: not reviewed unless requested by the TPRM Office. [doc_id: FIN-STD]  \n- Trigger events (e.g., change of control, major layoffs, missed debt payments, rating downgrades, etc.) require a review within 15 business days of awareness. [doc_id: FIN-STD]",
+  "retrieved_doc_ids": [
+   "DUE-OLD",
+   "FIN-STD",
+   "FRTH-POL"
+  ]
+ },
+ {
+  "id": "GQ-050",
+  "question": "Who approves a Tier 1 vendor?",
+  "answer": "Answer: The TPRM Office assigns and confirms a vendor's tier (including Tier 1) [doc_id: TIER-MTX].\n\nSupporting detail:\n- Exceptions for Tier 1 require approval by the Chief Risk Officer after recommendation by the Head of Third-Party Risk Management [doc_id: EXC-PRC].  \n- Contract/signature approval follows Procurement Policy based on contract value (department head / managing director / CFO) and is a separate approval step [doc_id: PRC-POL].",
+  "retrieved_doc_ids": [
+   "ACC-STD",
+   "AIV-STD",
+   "DUE-STD",
+   "EXC-PRC",
+   "FRTH-POL",
+   "PRC-POL",
+   "TIER-MTX",
+   "TPR-POL"
+  ]
+ },
+ {
+  "id": "GQ-051",
+  "question": "How much notice does the vendor have to give us?",
+  "answer": "Which type of notice do you mean \u2014 e.g., adding/replacing a subcontractor, an incident, a vendor employee leaving, or contract termination?  \n\nQuick summary of common notice periods:\n- Subcontractor additions/replacements: Tier 1 = 60 days; Tier 2 = 30 days [doc_id: FRTH-POL].  \n- Incident notifications: deadlines vary by incident type and vendor tier (examples: critical-service outage \u2014 Tier 1: 1 hour; Tier 2: 4 hours; ransomware \u2014 Tier 1: 4 hours; confirmed personal-data breach \u2014 Tier 1: 24 hours; see the INCN-SLA table for full detail) [doc_id: INCN-SLA].  \n- Vendor must notify the Vendor Manager within 1 business day when any individual with Northwind access leaves the vendor or moves off the account [doc_id: ACC-STD].  \n- On contract termination the vendor must provide at least 6 months transition assistance after notice of termination, and must deliver a certificate of data destruction within 30 days of the termination effective date [doc_id: EXIT-PLN].\n\nIf you tell me which specific notice you mean, I\u2019ll pull the exact clause.",
+  "retrieved_doc_ids": [
+   "ACC-STD",
+   "EXIT-PLN",
+   "FRTH-POL",
+   "INCN-SLA"
+  ]
+ },
+ {
+  "id": "GQ-052",
+  "question": "Can a Tier 1 vendor give us a SOC 2 Type I report instead of Type II?",
+  "answer": "No. Tier 1 vendors must provide a SOC 2 Type II report; SOC 2 Type I reports are not accepted as a substitute. [doc_id: DUE-STD]\n\nSupporting details:\n- The SOC 2 Type II report must cover at least 6 months and be dated no more than 12 months before the review date. [doc_id: DUE-STD]  \n- The Vendor Risk Tiering Matrix also lists \u201cSOC 2 Type II or approved equivalent\u201d as required for Tier 1. [doc_id: TIER-MTX]  \n- For cloud service providers, the Cloud Service Provider Assessment Standard likewise requires a SOC 2 Type II per DUE-STD. [doc_id: CLD-STD]  \n- Bridge letters are accepted to cover a gap of up to 3 months after the report period end; ISO/IEC 27001 may only substitute for a Tier 2 vendor with written CISO approval (not for Tier 1). [doc_id: DUE-STD]",
+  "retrieved_doc_ids": [
+   "CLD-STD",
+   "DUE-OLD",
+   "DUE-STD",
+   "TIER-MTX"
+  ]
+ },
+ {
+  "id": "GQ-053",
+  "question": "How often do Tier 1 vendors need a full due diligence reassessment?",
+  "answer": "Tier 1 vendors require a full due diligence reassessment every 12 months. [doc_id: DUE-STD] [doc_id: TIER-MTX]\n\nSupporting detail: The Vendor Due Diligence Standard states reassessment for Tier 1 is every 12 months and requires the Vendor Manager to start reassessment no later than 60 days before the due date; reassessments >30 days overdue are reported to the TPRC and block renewal [doc_id: DUE-STD]. The Tiering Matrix also lists a 12\u2011month full reassessment for Tier 1 [doc_id: TIER-MTX].",
+  "retrieved_doc_ids": [
+   "DUE-OLD",
+   "DUE-STD",
+   "FIN-STD",
+   "TIER-MTX"
+  ]
+ },
+ {
+  "id": "GQ-054",
+  "question": "How long are due diligence results good for before we have to sign the contract?",
+  "answer": "Answer: Due diligence results are valid for 90 days. [doc_id: DUE-STD]\n\nSupporting detail:\n- Due diligence must be completed and approved by the TPRM Office before contract signature. [doc_id: DUE-STD][doc_id: TPR-POL]\n- If the contract is not executed within 90 days of approval, the TPRM Office refreshes sanctions screening and confirms no material change before signature. [doc_id: DUE-STD]",
+  "retrieved_doc_ids": [
+   "DUE-OLD",
+   "DUE-STD",
+   "TPR-POL"
+  ]
+ },
+ {
+  "id": "GQ-055",
+  "question": "Business is pushing to sign today. Can we execute the contract and finish due diligence within 30 days after?",
+  "answer": "Short answer: No \u2014 you may not sign now and finish due diligence afterward. [doc_id: DUE-STD] [doc_id: TPR-POL]\n\nSupporting detail:\n- The Vendor Due Diligence Standard requires due diligence to be completed and approved by the TPRM Office before contract signature; Procurement may not issue a PO against an unapproved vendor. [doc_id: DUE-STD]\n- The Third\u2011Party Risk Management Policy likewise requires due diligence to be completed and approved before signature and specifies required checks (e.g., sanctions screening and, for higher tiers, financial review). [doc_id: TPR-POL]\n- An earlier (now superseded) version of the due-diligence standard allowed signing with diligence completed within 30 days in urgent cases; that version is superseded and is not the current requirement. [doc_id: DUE-OLD]\n\nIf you want, I can (a) flag this to TPRM to request an expedited review or (b) pull any escalation/exception procedure if you want to pursue an approved exception.",
+  "retrieved_doc_ids": [
+   "DUE-OLD",
+   "DUE-STD",
+   "EXIT-PLN",
+   "TPR-POL"
+  ]
+ }
+]
