@@ -27,8 +27,9 @@ This corpus is synthetic. Northwind Capital Group is a fictional financial-servi
 | ACC-STD | vendor-access-standard.md | Vendor Access Management Standard | Current | 603 |
 | GIFT-POL | vendor-gifts-conflicts-policy.md | Gifts, Entertainment and Vendor Conflicts of Interest Policy | Current | 544 |
 | AIV-STD | ai-vendor-assessment-addendum.md | AI Vendor Assessment Addendum | Current | 592 |
+| OFFS-STD | vendor-offshoring-and-data-location-standard.md | Vendor Offshoring and Data Location Standard | Current | 394 |
 
-Total: 23 documents, 12016 words. Word counts are whitespace-delimited tokens over the full file, including the metadata block.
+Total: 24 documents, 12410 words. Word counts are whitespace-delimited tokens over the full file, including the metadata block.
 
 ## Retrieval properties
 
