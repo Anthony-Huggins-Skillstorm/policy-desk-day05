@@ -10,7 +10,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass, field
 
-CITATION_RE = re.compile(r"\[doc_id:\s*([A-Z]{3}-[A-Z]{3})\]")
+CITATION_RE = re.compile(r"\[doc_id:\s*([A-Z]{3,4}-[A-Z]{3,4})\]")
 
 
 @dataclass(frozen=True)
